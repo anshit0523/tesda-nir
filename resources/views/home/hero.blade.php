@@ -9,25 +9,19 @@
 
 
     <!-- Hero Background Graphic -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <img
-            src="{{ asset('images/B.png') }}"
-            alt=""
-            class="absolute
-                   left-1/2
-                   top-1/2
-                   -translate-x-1/2
-                   -translate-y-1/2
-                   w-[850px]
-                   md:w-[1000px]
-                   lg:w-[1200px]
-                   xl:w-[1350px]
-                   object-contain
-                   opacity-20"
-        >
+    <img 
+        src="{{ asset('images/B.png') }}" 
+        alt="" 
+        class="absolute inset-0 
+               w-full 
+               h-full 
+               object-cover 
+               opacity-20"
+    >
 
-    </div>
+</div>
 
 
     <!-- Hero Content -->
@@ -36,15 +30,19 @@
         <div class="max-w-3xl">
 
             <!-- Main Heading -->
-            <h1
-                class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl
-                       font-bold
-                       leading-[1.15]
-                       tracking-tight
-                       text-white"
-            >
-                Technical Education and Skills Development Authority
-            </h1>
+         <h1 
+    class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl 
+           font-bold 
+           leading-[1.15] 
+           tracking-tight 
+           text-white"
+>
+    <span class="text-[1.15em]">T</span>echnical
+    <span class="text-[1.15em]">E</span>ducation and
+    <span class="text-[1.15em]">S</span>kills
+    <span class="text-[1.15em]">D</span>evelopment
+    <span class="text-[1.15em]">A</span>uthority
+</h1> 
 
 
             <!-- Region -->
