@@ -6,9 +6,9 @@
             'title' => 'Mandates, Officials & Contact Information',
             'description' => 'Agency mandate and functions, directory of officials, and TESDA Board members.',
             'items' => [
-                ['label' => 'Mandate and Function', 'href' => '#'],
-                ['label' => 'Directory of Officials', 'href' => '#'],
-                ['label' => 'TESDA Board Members', 'href' => '#'],
+                ['label' => 'Mandate and Function', 'href' => 'https://tesda.gov.ph/About/TESDA/10'],
+                ['label' => 'Directory of Officials', 'href' => 'https://tesda.gov.ph/directory'],
+                ['label' => 'TESDA Board Members', 'href' => 'https://tesda.gov.ph/About/TESDA/24686'],
             ],
         ],
         [
@@ -96,7 +96,7 @@
 {{-- ============ HERO BANNER ============ --}}
 <section class="relative overflow-hidden" style="background-color: #0041A5;">
 
-    <div class="relative max-w-7xl mx-auto px-8 py-20 md:py-24">
+    <div class="relative max-w-7xl mx-auto px-8 py-20 md:py-28">
         <div class="grid grid-cols-1 md:grid-cols-[auto_1fr] items-center gap-12 md:gap-16">
 
             {{-- Seal Logo --}}
@@ -221,6 +221,9 @@
     </div>
 </section>
 
+
+
+
 <script>
     document.querySelectorAll('.accordion-trigger').forEach((btn) => {
         btn.addEventListener('click', () => {
@@ -235,3 +238,4 @@
     });
 </script>
 @endsection
+

@@ -1,15 +1,13 @@
 <div
     id="mobileMenu"
-    class="hidden lg:hidden bg-blue-900 border-t border-blue-800">
+    class="hidden lg:hidden bg-blue-900 border-t border-blue-800 text-white">
 
     <div class="max-h-[80vh] overflow-y-auto">
 
         <!-- Home -->
         <a href="{{ url('/') }}"
            class="block px-6 py-4 border-b border-blue-800 hover:bg-blue-800">
-
             Home
-
         </a>
 
         <!-- About -->
@@ -39,15 +37,10 @@
             <div class="bg-blue-950">
 
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Regional Profile</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Mission, Vision & Core Values</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Organizational Structure</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Regional Director</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Regional Offices</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Contact Information</a>
 
             </div>
@@ -81,15 +74,10 @@
             <div class="bg-blue-950">
 
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Courses</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Scholarships</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Training Centers</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Assessment & Certification</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Check Eligibility</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">TESDA Online Program</a>
 
             </div>
@@ -99,9 +87,7 @@
         <!-- News -->
         <a href="#news"
            class="block px-6 py-4 border-b border-blue-800 hover:bg-blue-800">
-
             News
-
         </a>
 
         <!-- Transparency -->
@@ -130,14 +116,14 @@
 
             <div class="bg-blue-950">
 
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Transparency Seal</a>
+                <a href="{{ route('transparency.seal') }}"
+                   class="block px-10 py-3 hover:bg-blue-800">
+                    Transparency Seal
+                </a>
 
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Citizen's Charter</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Bids & Awards Committee</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Downloadable Forms</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Issuances</a>
 
             </div>
@@ -171,11 +157,8 @@
             <div class="bg-blue-950">
 
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Downloads</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Gallery</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">FAQs</a>
-
                 <a href="#" class="block px-10 py-3 hover:bg-blue-800">Useful Links</a>
 
             </div>
@@ -185,9 +168,7 @@
         <!-- Contact -->
         <a href="#contact"
            class="block px-6 py-4 hover:bg-blue-800">
-
             Contact
-
         </a>
 
     </div>
