@@ -52,7 +52,7 @@
 
             <!-- Menu Items -->
 
-            <a href="#"
+            <a href="{{ route('transparency.seal') }}"
                class="block px-6 py-4 hover:bg-blue-50 transition">
 
                 <h4 class="font-medium text-gray-800">

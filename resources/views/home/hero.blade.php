@@ -1,6 +1,6 @@
 <section
     id="home"
-    class="relative min-h-screen flex items-center pb-24 overflow-hidden bg-cover bg-center bg-no-repeat"
+    class="relative min-h-[100dvh] flex items-center pb-24 overflow-hidden bg-cover bg-center bg-no-repeat"
     style="background-image: url('{{ asset('images/hero.jpg') }}');"
 >
 

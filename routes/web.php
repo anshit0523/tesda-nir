@@ -50,3 +50,6 @@ Route::view(
 )->name('contact.siquijor');
 
 Route::post('/chatbot', [ChatbotController::class, 'handle'])->name('chatbot.handle');
+
+Route::view('/transparency/seal','transparency.transparency-seal'
+)->name('transparency.seal');

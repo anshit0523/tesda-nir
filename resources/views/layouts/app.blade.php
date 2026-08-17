@@ -36,9 +36,51 @@
         href="{{ asset('images/favicon-16x16.png') }}"
     >
 
+    <!-- Preload Hero Assets -->
+<link
+    rel="preload"
+    as="image"
+    href="{{ asset('images/hero.jpg') }}"
+>
+
+<link
+    rel="preload"
+    as="image"
+    href="{{ asset('images/B.png') }}"
+>
+
+<link
+    rel="preload"
+    as="font"
+    href="{{ asset('fonts/Frutiger.ttf') }}"
+    type="font/ttf"
+    crossorigin
+>
+
+<link
+    rel="preload"
+    as="font"
+    href="{{ asset('fonts/Frutiger_bold.ttf') }}"
+    type="font/ttf"
+    crossorigin
+>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Frutiger', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
 
 
     <!-- Frutiger Font -->
@@ -49,7 +91,7 @@
             src: url('{{ asset('fonts/Frutiger.ttf') }}') format('truetype');
             font-weight: 400;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
@@ -57,12 +99,7 @@
             src: url('{{ asset('fonts/Frutiger_bold.ttf') }}') format('truetype');
             font-weight: 700;
             font-style: normal;
-            font-display: swap;
-        }
-
-
-        * {
-            font-family: 'Frutiger', sans-serif;
+            font-display: block;
         }
 
 
@@ -83,7 +120,7 @@
 
 </head>
 
-<body>
+<body class="font-sans">
 
     @yield('content')
 
