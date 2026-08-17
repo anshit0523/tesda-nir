@@ -1,0 +1,174 @@
+@extends('layouts.app')
+
+@section('title', 'Negros Occidental | TESDA NIR')
+
+@section('content')
+
+    @include('partials.navbar')
+
+    <section id="negros-occidental" class="py-24 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900">
+                    TESDA NIR Negros Occidental
+                </h2>
+
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                    Provincial Office
+                </p>
+
+            </div>
+
+            <!-- Provincial Office -->
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+                <!-- Google Map -->
+                <div class="overflow-hidden rounded-xl border border-gray-200">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.975268984207!2d122.96781748039731!3d10.736389394655008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed69589f0a3cb%3A0x69b5fe316685dce4!2sFelipe%20Lacson%20St%2C%20Talisay%2C%20Negros%20Occidental!5e0!3m2!1sen!2sph!4v1786417139192!5m2!1sen!2sph"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </div>
+
+                <!-- Office Information -->
+                <div>
+
+                    <h3 class="text-3xl font-bold text-blue-900 mb-8">
+                        Negros Occidental Provincial Office
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <!-- Address -->
+                        <div class="flex gap-4">
+
+                            <div class="flex-shrink-0 w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center">
+
+                                <!-- Heroicon: Map Pin -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                                    stroke="currentColor" class="w-5 h-5 text-blue-900">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-semibold text-blue-900">
+                                    Office Address
+                                </h4>
+
+                                <p class="text-gray-600 leading-7">
+                                    Talisay City, Felipe Lacson St.,<br>
+                                    Talisay, Negros Occidental,<br>
+                                    Philippines
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex gap-4">
+
+                            <div class="flex-shrink-0 w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center">
+
+                                <!-- Heroicon: Envelope -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                                    stroke="currentColor" class="w-5 h-5 text-blue-900">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-semibold text-blue-900">
+                                    Email Address
+                                </h4>
+
+                                <a href="mailto:nir.negrosoccidental@tesda.gov.ph"
+                                    class="text-blue-700 hover:text-blue-900 hover:underline">
+
+                                    nir.negrosoccidental@tesda.gov.ph
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Telephone -->
+                        <div class="flex gap-4">
+
+                            <div class="flex-shrink-0 w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center">
+
+                                <!-- Heroicon: Phone -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                                    stroke="currentColor" class="w-5 h-5 text-blue-900">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-semibold text-blue-900">
+                                    Telephone
+                                </h4>
+
+                                <div class="space-y-1">
+
+                                    <a href="tel:0347127175" class="block text-gray-600 hover:text-blue-900">
+
+                                        (034) 712-7175
+
+                                    </a>
+
+                                    <a href="tel:0344956622" class="block text-gray-600 hover:text-blue-900">
+
+                                        (034) 495-6622
+
+                                    </a>
+
+                                    <a href="tel:0364956621" class="block text-gray-600 hover:text-blue-900">
+
+                                        (036) 495-6621
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+@endsection
