@@ -29,10 +29,9 @@
                 <!-- Google Map -->
                 <div class="overflow-hidden rounded-xl border border-gray-200">
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.975268984207!2d122.96781748039731!3d10.736389394655008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed69589f0a3cb%3A0x69b5fe316685dce4!2sFelipe%20Lacson%20St%2C%20Talisay%2C%20Negros%20Occidental!5e0!3m2!1sen!2sph!4v1786417139192!5m2!1sen!2sph"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                   <iframe src="https://www.google.com/maps/embed?pb=!4v1787031745810!6m8!1m7!1snht3-C8PEqGg-OBctgEPrg!2m2!1d10.74079855391031!2d122.970930506259!3f14.791146386158351!4f-6.125489842771657!5f1.5220832154656376" width="600" height="450" 
+                   style="border:0;" allowfullscreen="" loading="lazy" 
+                   referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
                 </div>
 
