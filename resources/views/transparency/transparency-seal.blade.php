@@ -16,14 +16,17 @@
             'title' => 'Budget Execution Reports',
             'description' => 'Financial Plan, Physical Plan, and Monthly Disbursement Program by year.',
             'items' => [
-                ['label' => 'Financial Plan (BED No. 1) — 2026', 'href' => '#'],
-                ['label' => 'Physical Plan (BED No. 2) — 2026', 'href' => '#'],
-                ['label' => 'Monthly Disbursement Program (BED No. 3) — 2026', 'href' => '#'],
+                ['label' => 'Financial Accountability Report - March, 2026', 'href' => 'https://drive.google.com/file/d/1JezyiDZW8lYJj_QkALvruH9xnwerUCWp/view?usp=sharing'],
+                ['label' => 'Financial Accountability Report - April, 2026', 'href' => 'https://drive.google.com/file/d/1hgVHS7-Hg55IclppRS-LaPJVDPdfaU6H/view?usp=sharing'],
+                ['label' => 'Financial Accountability Report - May, 2026', 'href' => 'https://drive.google.com/file/d/1X6kjp147zLlm62faVUcn91Gc3L7rRfYr/view?usp=sharing'],
+                ['label' => 'Financial Accountability Report - June, 2026', 'href' => 'https://drive.google.com/file/d/1ATxbHpAxfjhXmJpUXb15fyfRorqKFURr/view?usp=sharing'],
+                
+                
             ],
         ],
         [
             'numeral' => 'III',
-            'title' => 'Approved Budgets & Corresponding Targets',
+            'title' => 'TESDA Approved Budgets and Corresponding Targets',
             'description' => 'Budget as reflected in the General Appropriations Act (GAA) and OPIF targets.',
             'items' => [
                 ['label' => 'FY 2026 Budget', 'href' => '#'],
@@ -32,7 +35,7 @@
         ],
         [
             'numeral' => 'IV',
-            'title' => 'Efficiency & Integrity Development',
+            'title' => 'Efficiency & Integrity Development Plan',
             'description' => "Citizen's Charter, Net Worth of Officials, and COA audit action status.",
             'items' => [
                 ['label' => "Citizen's Charter", 'href' => '#'],
@@ -53,8 +56,8 @@
             'title' => 'Annual Procurement Plan (APP)',
             'description' => 'Common-use and non-common-use supplies and equipment plans by year.',
             'items' => [
-                ['label' => 'Indicative APP — Non-CSE 2026', 'href' => '#'],
-                ['label' => 'APP Common Supplies & Equipment 2026', 'href' => '#'],
+                ['label' => 'TESDA NIR- CY 2026 UPDATED APP V2', 'href' => 'https://drive.google.com/file/d/1jxGYuQI9zjywGKXyi3chDgMA2G37oAwx/view?usp=sharing'],
+                ['label' => 'TESDA NIR - PMR  - CY 2026 - 1st Semester', 'href' => 'https://drive.google.com/file/d/1eIPyTZ8VSPlqaveDnkqVCz1-m9UXRYz5/view?usp=sharing'],
             ],
         ],
         [
@@ -70,8 +73,8 @@
             'title' => 'Financial Reports',
             'description' => 'Consolidated and per-office quarterly financial reports.',
             'items' => [
-                ['label' => 'Consolidated Financial Report — Q4 2026', 'href' => '#'],
-                ['label' => 'Consolidated Financial Report — Q3 2026', 'href' => '#'],
+                ['label' => 'Financial Statements - June 30, 2026 (Fund 101)', 'href' => 'https://drive.google.com/file/d/1t_UGN2FJZ5mZURpnXZk4p7Hpx8Uwl39X/view?usp=sharing'],
+               
             ],
         ],
         [
@@ -203,6 +206,7 @@
                                 <li>
                                     <a
                                         href="{{ $item['href'] }}"
+                                        target="_blank"
                                         class="flex items-center gap-3 py-3 text-slate-700 hover:text-blue-900 transition group"
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-slate-400 group-hover:text-blue-900 shrink-0">

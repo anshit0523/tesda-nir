@@ -154,13 +154,13 @@
     [
         'step'  => '01',
         'title' => 'Create an account',
-        'desc'  => 'Visit bsrs.tesda.gov.ph and register for a free B-SRS account to get started.',
+       'desc' => 'Visit <span class="font-semibold text-blue-700 underline decoration-black-500 decoration-2 underline-offset-4">bsrs.tesda.gov.ph</span> and register for a free BSRS account to get started.',
         'link'  => 'https://bsrs.tesda.gov.ph',
     ],
     [
         'step'  => '02',
         'title' => 'Find a program',
-        'desc'  => 'Browse available training programs on the TESDA B-SRS platform and select one that matches your interest.',
+        'desc'  => 'Browse available training programs on the TESDA BSRS platform and select one that matches your interest.',
         'link'  => 'https://bsrs.tesda.gov.ph',
     ],
     [
@@ -172,7 +172,7 @@
     [
         'step'  => '04',
         'title' => 'Submit your enrollment',
-        'desc'  => 'Complete the online enrollment form and submit the required documents through B-SRS.',
+        'desc'  => 'Complete the online enrollment form and submit the required documents through BSRS.',
         'link'  => 'https://bsrs.tesda.gov.ph',
     ],
 ] as $item)
@@ -189,25 +189,27 @@
                        text-xs font-bold text-blue-900
                        flex">
             {{ $item['step'] }}
+            
           </span>
 
           <!-- Content -->
          <div class="pt-0.5">
   @if(!empty($item['link']))
-    <a
-        href="{{ $item['link'] }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="group block"
-    >
-        <h5 class="text-sm font-semibold text-slate-900 group-hover:text-blue-900 transition-colors">
-            {{ $item['title'] }}
-        </h5>
+  <a
+    href="{{ $item['link'] }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="group block"
+>
+    <h5 class="text-sm font-semibold text-slate-900 group-hover:text-blue-900 transition-colors">
+        {{ $item['title'] }}
+    </h5>
 
-        <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">
-            {{ $item['desc'] }}
-        </p>
-    </a>
+    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">
+        {!! $item['desc'] !!}
+    </p>
+</a>
+
 @else
     <div class="pt-0.5">
         <h5 class="text-sm font-semibold text-slate-900">
@@ -215,7 +217,7 @@
         </h5>
 
         <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">
-            {{ $item['desc'] }}
+             {!! $item['desc'] !!}
         </p>
     </div>
 @endif
