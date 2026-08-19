@@ -8,7 +8,7 @@
 
 <section
     id="negros-occidental"
-    class="relative py-24 lg:py-28 bg-gray-50 overflow-hidden"
+    class="relative pt-14 pb-24 lg:pt-18 lg:pb-28 bg-gray-50 overflow-hidden"
 >
 
     <!-- Main Content -->
@@ -19,7 +19,7 @@
         <!-- SECTION HEADER -->
         <!-- ================================= -->
 
-        <div class="max-w-3xl mx-auto mb-16 text-center">
+        <div class="max-w-3xl mx-auto mb-12 text-center">
 
             <!-- Small Label -->
             <div class="flex items-center justify-center gap-3 mb-5">
@@ -27,7 +27,7 @@
                 <span class="h-[2px] w-10 bg-amber-500"></span>
 
                 <span
-                    class="text-sm
+                    class="text-sms
                            font-bold
                            tracking-[0.18em]
                            uppercase
