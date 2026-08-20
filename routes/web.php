@@ -11,6 +11,7 @@ Route::get('/', function () {
 Route::view('/mission-vision', 'about.mission-vision')
     ->name('mission-vision');
 
+
 Route::view('/contact/regional-headquarters','contact.regional-headquarters'
 )->name('contact.regional-headquarters');
 
@@ -28,4 +29,10 @@ Route::post('/chatbot', [ChatbotController::class, 'handle'])->name('chatbot.han
 
 Route::view('/transparency/seal','transparency.transparency-seal'
 )->name('transparency.seal');
+
+Route::view('/news', 'newsmain')->name('newsmain');
+
+
+Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
+
 

@@ -73,7 +73,7 @@
 
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('scholarshipmain') }}"
                        class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
                         <span class="font-medium text-gray-800">

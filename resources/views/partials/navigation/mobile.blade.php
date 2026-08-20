@@ -47,49 +47,6 @@
 
         </details>
 
-        <!-- Programs -->
-        <details class="border-b border-blue-800 group">
-
-            <summary
-                class="flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-blue-800 list-none">
-
-                <span>Programs & Services</span>
-
-                <svg
-                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"/>
-
-                </svg>
-
-            </summary>
-
-            <div class="bg-blue-950">
-
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Courses</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Scholarships</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Training Centers</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Assessment & Certification</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Check Eligibility</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">TESDA Online Program</a>
-
-            </div>
-
-        </details>
-
-        <!-- News -->
-        <a href="#news"
-           class="block px-6 py-4 border-b border-blue-800 hover:bg-blue-800">
-            News
-        </a>
-
         <!-- Transparency -->
         <details class="border-b border-blue-800 group">
 
@@ -130,13 +87,13 @@
 
         </details>
 
-        <!-- Resources -->
+        <!-- Programs & Services -->
         <details class="border-b border-blue-800 group">
 
             <summary
                 class="flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-blue-800 list-none">
 
-                <span>Resources</span>
+                <span>Programs & Services</span>
 
                 <svg
                     class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
@@ -156,14 +113,22 @@
 
             <div class="bg-blue-950">
 
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Downloads</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Gallery</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">FAQs</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Useful Links</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Courses</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Scholarships</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Training Centers</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Assessment & Certification</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Check Eligibility</a>
+                <a href="#" class="block px-10 py-3 hover:bg-blue-800">TESDA Online Program</a>
 
             </div>
 
         </details>
+
+        <!-- News & Impact -->
+        <a href="{{ route('newsmain') }}"
+           class="block px-6 py-4 border-b border-blue-800 hover:bg-blue-800">
+            News & Impact
+        </a>
 
         <!-- Contact -->
         <a href="#contact"

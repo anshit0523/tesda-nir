@@ -85,7 +85,7 @@
                 <li>
 
                     <a
-                        href="#news"
+                        href="{{ route('newsmain') }}"
                         class="transition duration-300
                                border-b-2 border-transparent
                                pb-1

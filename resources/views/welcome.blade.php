@@ -13,17 +13,16 @@
         @include('home.rd-message')
 
         @include('home.programs')
+@include('component.Agenda')
 
-        @include('component.wall-of-success')
-@include('component.partnership')
-        @include('home.news')
 
         @include('contact.regional-headquarters')
+       
 
     </main>
     
-    @include('partials.footer')
-
+     
+@include('partials.footer')
     @include('partials.chatbot')
 
 @endsection
