@@ -14,12 +14,14 @@
 
         @include('home.programs')
 
+        @include('component.wall-of-success')
+@include('component.partnership')
         @include('home.news')
 
         @include('contact.regional-headquarters')
 
     </main>
-
+    
     @include('partials.footer')
 
     @include('partials.chatbot')

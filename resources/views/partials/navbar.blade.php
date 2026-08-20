@@ -72,6 +72,10 @@
                 <!-- About -->
                 @include('partials.navigation.about')
 
+                
+                <!-- Transparency -->
+                @include('partials.navigation.transparency')
+
 
                 <!-- Programs & Services -->
                 @include('partials.navigation.programs-services')
@@ -88,14 +92,12 @@
                                hover:text-amber-300
                                hover:border-amber-300"
                     >
-                        News
+                        News & Impact
                     </a>
 
                 </li>
 
 
-                <!-- Transparency -->
-                @include('partials.navigation.transparency')
 
 
                 <!-- Contact -->

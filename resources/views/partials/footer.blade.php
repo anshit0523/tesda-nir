@@ -2,6 +2,8 @@
 
 <div class="max-w-7xl mx-auto text-center">
 
+
+  
 <p>
 
 © {{ date('Y') }}

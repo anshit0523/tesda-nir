@@ -5,7 +5,7 @@
 >
 
     <!-- Blue Overlay -->
-    <div class="absolute inset-0 bg-blue-900/70"></div>
+    <div class="absolute inset-0 bg-blue-900"></div>
 
 
     <!-- Hero Background Graphic -->

@@ -38,18 +38,7 @@
 
         <div class="bg-white rounded-xl border border-gray-200 shadow-xl overflow-hidden">
 
-            <!-- Header -->
-            <div class="px-6 py-4 bg-blue-900 text-white">
-
-                <h3 class="font-semibold text-lg">
-                    Contact TESDA NIR
-                </h3>
-
-                <p class="text-xs text-blue-100 mt-1">
-                    Regional and Provincial Offices
-                </p>
-
-            </div>
+       
 
             <!-- Regional Headquarters -->
             <a
