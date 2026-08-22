@@ -9,11 +9,11 @@
     <main>
 
         @include('home.hero')
-
+@include('component.Agenda')
         @include('home.rd-message')
 
         @include('home.programs')
-@include('component.Agenda')
+
 
 
         @include('contact.regional-headquarters')

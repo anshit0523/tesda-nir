@@ -30,6 +30,7 @@
         box-sizing: border-box;
     }
 
+
     /* =========================================================
        HEADER
        ========================================================= */
@@ -40,21 +41,23 @@
         background: #fff;
     }
 
-    #agenda-page .agenda-header img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
+ #agenda-page .agenda-header img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
 
     /* =========================================================
        MAIN AREA
+       HEADER + CAROUSEL TOUCH DIRECTLY
        ========================================================= */
 
     #agenda-page .agenda-container {
-        width: min(1200px, calc(100% - 48px));
+        width: 100%;
 
-        margin: 42px auto 70px;
+        margin: 0 auto 70px;
     }
 
 
@@ -121,6 +124,7 @@
 
 
     /* Decorative diagonal */
+
     #agenda-page .agenda-left::after {
         content: "";
 
@@ -234,7 +238,8 @@
 
 
     /* =========================================================
-       NAVIGATION
+       NAVIGATION ARROWS
+       HIDDEN BY DEFAULT
        ========================================================= */
 
     #agenda-page .agenda-arrow {
@@ -264,11 +269,44 @@
 
         box-shadow: 0 5px 18px rgba(0,0,0,.18);
 
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
         transition:
+            opacity .25s ease,
+            visibility .25s ease,
             background .2s ease,
             color .2s ease,
             transform .2s ease;
     }
+
+
+    /* SHOW ARROWS WHEN HOVERING CAROUSEL */
+
+    #agenda-page .agenda-carousel:hover .agenda-arrow {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+
+    /* =========================================================
+       ARROW POSITION
+       ========================================================= */
+
+    #agenda-page .agenda-arrow.prev {
+        left: 24px;
+    }
+
+    #agenda-page .agenda-arrow.next {
+        right: 24px;
+    }
+
+
+    /* =========================================================
+       ARROW HOVER
+       ========================================================= */
 
     #agenda-page .agenda-arrow:hover {
         background: var(--tesda-blue);
@@ -278,14 +316,6 @@
         transform:
             translateY(-50%)
             scale(1.08);
-    }
-
-    #agenda-page .agenda-arrow.prev {
-        left: -24px;
-    }
-
-    #agenda-page .agenda-arrow.next {
-        right: -24px;
     }
 
     #agenda-page .agenda-arrow svg {
@@ -365,12 +395,9 @@
     @media (max-width: 900px) {
 
         #agenda-page .agenda-container {
-            width: min(
-                100% - 36px,
-                1000px
-            );
+            width: 100%;
 
-            margin-top: 32px;
+            margin-top: 0;
         }
 
         #agenda-page .agenda-slide {
@@ -411,11 +438,16 @@
     @media (max-width: 640px) {
 
         #agenda-page .agenda-container {
-            width: calc(100% - 24px);
+            width: 100%;
 
-            margin-top: 24px;
+            margin-top: 0;
             margin-bottom: 65px;
         }
+
+
+        /* -----------------------------------------------------
+           MOBILE SLIDE
+           ----------------------------------------------------- */
 
         #agenda-page .agenda-slide {
             grid-template-columns: 36% 64%;
@@ -427,6 +459,11 @@
             min-height: 175px;
         }
 
+
+        /* -----------------------------------------------------
+           MOBILE ICON
+           ----------------------------------------------------- */
+
         #agenda-page .agenda-icon {
             left: 50%;
             top: 22px;
@@ -437,6 +474,11 @@
             transform: translateX(-50%);
         }
 
+
+        /* -----------------------------------------------------
+           MOBILE NUMBER
+           ----------------------------------------------------- */
+
         #agenda-page .agenda-number {
             left: 50%;
             right: auto;
@@ -446,6 +488,11 @@
 
             font-size: 62px;
         }
+
+
+        /* -----------------------------------------------------
+           MOBILE CONTENT
+           ----------------------------------------------------- */
 
         #agenda-page .agenda-right {
             padding: 20px 17px;
@@ -465,27 +512,19 @@
             line-height: 1.3;
         }
 
+
+        /* -----------------------------------------------------
+           HIDE ARROWS ON MOBILE
+           ----------------------------------------------------- */
+
         #agenda-page .agenda-arrow {
-            top: auto;
-            bottom: -55px;
-
-            width: 40px;
-            height: 40px;
-
-            transform: none;
+            display: none;
         }
 
-        #agenda-page .agenda-arrow:hover {
-            transform: scale(1.05);
-        }
 
-        #agenda-page .agenda-arrow.prev {
-            left: calc(50% - 52px);
-        }
-
-        #agenda-page .agenda-arrow.next {
-            right: calc(50% - 52px);
-        }
+        /* -----------------------------------------------------
+           PROGRESS
+           ----------------------------------------------------- */
 
         #agenda-page .agenda-progress {
             margin-top: 20px;
@@ -499,6 +538,11 @@
         #agenda-page .agenda-dot.active {
             width: 22px;
         }
+
+
+        /* -----------------------------------------------------
+           POINT LABEL
+           ----------------------------------------------------- */
 
         #agenda-page .agenda-point {
             margin-top: 10px;
@@ -558,6 +602,10 @@
     }
 
 
+    /* =========================================================
+       REDUCED MOTION
+       ========================================================= */
+
     @media (prefers-reduced-motion: reduce) {
 
         #agenda-page .agenda-track {
@@ -570,6 +618,7 @@
 
 
 <div id="agenda-page">
+
 
     {{-- =====================================================
          HEADER
@@ -594,7 +643,9 @@
         <div class="agenda-carousel">
 
 
-            {{-- PREVIOUS --}}
+            {{-- =================================================
+                 PREVIOUS BUTTON
+                 ================================================= --}}
 
             <button
                 type="button"
@@ -611,13 +662,17 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                 >
+
                     <path d="M15 18l-6-6 6-6"/>
+
                 </svg>
 
             </button>
 
 
-            {{-- VIEWPORT --}}
+            {{-- =================================================
+                 VIEWPORT
+                 ================================================= --}}
 
             <div
                 class="agenda-viewport"
@@ -649,10 +704,19 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <circle cx="40" cy="48" r="25"/>
+
+                                    <circle
+                                        cx="40"
+                                        cy="48"
+                                        r="25"
+                                    />
+
                                     <path d="M28 48l9 9 17-19"/>
+
                                     <path d="M67 30l13-13"/>
+
                                     <path d="M67 70l13 13"/>
+
                                     <rect
                                         x="62"
                                         y="15"
@@ -660,7 +724,9 @@
                                         height="20"
                                         rx="4"
                                     />
+
                                     <path d="M62 73h20"/>
+
                                 </svg>
 
                             </div>
@@ -707,10 +773,21 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <circle cx="50" cy="35" r="17"/>
-                                    <path d="M22 80c3-18 13-27 28-27s25 9 28 27"/>
+
+                                    <circle
+                                        cx="50"
+                                        cy="35"
+                                        r="17"
+                                    />
+
+                                    <path
+                                        d="M22 80c3-18 13-27 28-27s25 9 28 27"
+                                    />
+
                                     <path d="M70 20l8 8"/>
+
                                     <path d="M78 28l8-8"/>
+
                                 </svg>
 
                             </div>
@@ -760,9 +837,17 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <path d="M10 35l40-18 40 18-40 18z"/>
-                                    <path d="M25 43v22c0 10 15 17 25 17s25-7 25-17V43"/>
+
+                                    <path
+                                        d="M10 35l40-18 40 18-40 18z"
+                                    />
+
+                                    <path
+                                        d="M25 43v22c0 10 15 17 25 17s25-7 25-17V43"
+                                    />
+
                                     <path d="M90 35v30"/>
+
                                 </svg>
 
                             </div>
@@ -810,10 +895,15 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
+
                                     <path d="M10 50l25-25 12 12-25 25z"/>
+
                                     <path d="M90 50L65 25 53 37l25 25z"/>
+
                                     <path d="M25 50l15 15"/>
+
                                     <path d="M75 50L60 65"/>
+
                                 </svg>
 
                             </div>
@@ -861,9 +951,19 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <circle cx="35" cy="30" r="14"/>
-                                    <path d="M12 78c3-17 12-25 23-25s20 8 23 25"/>
+
+                                    <circle
+                                        cx="35"
+                                        cy="30"
+                                        r="14"
+                                    />
+
+                                    <path
+                                        d="M12 78c3-17 12-25 23-25s20 8 23 25"
+                                    />
+
                                     <path d="M58 50l12 12 20-25"/>
+
                                 </svg>
 
                             </div>
@@ -908,6 +1008,7 @@
                                     stroke="white"
                                     stroke-width="6"
                                 >
+
                                     <rect
                                         x="10"
                                         y="30"
@@ -915,8 +1016,19 @@
                                         height="40"
                                         rx="20"
                                     />
-                                    <circle cx="32" cy="50" r="6"/>
-                                    <circle cx="68" cy="50" r="6"/>
+
+                                    <circle
+                                        cx="32"
+                                        cy="50"
+                                        r="6"
+                                    />
+
+                                    <circle
+                                        cx="68"
+                                        cy="50"
+                                        r="6"
+                                    />
+
                                 </svg>
 
                             </div>
@@ -935,10 +1047,9 @@
                             </h2>
 
                             <p class="agenda-description">
-                                Enable different learning modalities and
-                                improve the quality of TVET programs through
-                                immersive experience and the use of adequate
-                                facilities and appropriate technology.
+                                Enhance global competitiveness of TVET graduates, by aligning TVET programs 
+                                with international standards. 
+                                Improve internal processes to increase efficiency in program implementation
                             </p>
 
                         </div>
@@ -963,6 +1074,7 @@
                                     stroke-width="6"
                                     stroke-linecap="round"
                                 >
+
                                     <circle
                                         cx="50"
                                         cy="50"
@@ -970,8 +1082,11 @@
                                     />
 
                                     <path d="M15 50h70"/>
+
                                     <path d="M50 15c15 18 15 52 0 70"/>
+
                                     <path d="M50 15c-15 18-15 52 0 70"/>
+
                                 </svg>
 
                             </div>
@@ -990,11 +1105,8 @@
                             </h2>
 
                             <p class="agenda-description">
-                                Enhance global competitiveness of TVET
-                                graduates by aligning TVET programs with
-                                international standards, and improve internal
-                                processes to increase efficiency in program
-                                implementation.
+                              Enhance global competitiveness of TVET graduates, by aligning TVET programs with international standards. 
+                              Improve internal processes to increase efficiency in program implementation
                             </p>
 
                         </div>
@@ -1020,11 +1132,17 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
+
                                     <path d="M12 82h22V60H12z"/>
+
                                     <path d="M34 60h22V40H34z"/>
+
                                     <path d="M56 40h22V18H56z"/>
+
                                     <path d="M78 18h10"/>
+
                                     <path d="M82 12v10"/>
+
                                 </svg>
 
                             </div>
@@ -1045,10 +1163,8 @@
                             </h2>
 
                             <p class="agenda-description">
-                                Enhance the employability of SHS graduates
-                                by integrating TVET standards into the SHS
-                                curriculum, and enable multiple learning and
-                                career pathways through ladderization programs.
+                              Enhance employability of SHS graduates by integrating TVET standards in SHS curriculum, 
+                              and enable multiple learning and career pathways through ladderization programs
                             </p>
 
                         </div>
@@ -1061,7 +1177,9 @@
             </div>
 
 
-            {{-- NEXT --}}
+            {{-- =================================================
+                 NEXT BUTTON
+                 ================================================= --}}
 
             <button
                 type="button"
@@ -1078,7 +1196,9 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                 >
+
                     <path d="M9 18l6-6-6-6"/>
+
                 </svg>
 
             </button>
@@ -1109,9 +1229,13 @@
         </div>
 
 
-        <div class="agenda-point" id="agendaPoint">
+        <div
+            class="agenda-point"
+            id="agendaPoint"
+        >
             POINT 01 OF 08
         </div>
+
 
     </section>
 
@@ -1180,7 +1304,7 @@
 
 
         pointLabel.textContent =
-            `POINT ${String(index + 1).padStart(2, '0')} OF 08`;
+            `POINT ${String(index + 1).padStart(2, '0')} OF ${String(total).padStart(2, '0')}`;
 
     }
 
@@ -1226,12 +1350,14 @@
         dot.addEventListener(
             'click',
             () => {
+
                 goTo(
                     parseInt(
                         dot.dataset.index,
                         10
                     )
                 );
+
             }
         );
 
@@ -1253,6 +1379,7 @@
                 goTo(index - 1);
 
             }
+
 
             if (event.key === 'ArrowRight') {
 
@@ -1290,8 +1417,10 @@
 
             if (startX === null) return;
 
+
             const endX =
                 event.changedTouches[0].clientX;
+
 
             const distance =
                 endX - startX;
@@ -1310,6 +1439,7 @@
                 }
 
             }
+
 
             startX = null;
 
@@ -1331,7 +1461,7 @@
         autoTimer =
             setInterval(
                 () => goTo(index + 1),
-                7000
+                4000
             );
 
     }
@@ -1361,6 +1491,7 @@
         'mouseenter',
         stopAuto
     );
+
 
     page.addEventListener(
         'mouseleave',
