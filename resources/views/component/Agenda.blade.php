@@ -1243,11 +1243,11 @@
 
 
 @push('scripts')
+
 <script>
 (function () {
 
-    const page =
-        document.getElementById('agenda-page');
+    const page = document.getElementById('agenda-page');
 
     if (!page) return;
 
@@ -1272,53 +1272,178 @@
         page.querySelector('#agendaPoint');
 
 
-    const total =
-        track.children.length;
+    /* =====================================================
+       ORIGINAL SLIDES
+    ===================================================== */
+
+    const originalSlides = [
+        ...track.children
+    ];
+
+    const total = originalSlides.length;
 
 
-    let index = 0;
+    if (total <= 1) return;
+
+
+    /* =====================================================
+       CLONE FIRST + LAST SLIDES
+       
+       Example:
+       
+       [8] [1] [2] [3] [4] [5] [6] [7] [8] [1]
+        ↑                         ↑
+      clone                      clone
+    ===================================================== */
+
+    const firstClone =
+        originalSlides[0].cloneNode(true);
+
+    const lastClone =
+        originalSlides[total - 1].cloneNode(true);
+
+
+    firstClone.classList.add('agenda-clone');
+
+    lastClone.classList.add('agenda-clone');
+
+
+    track.appendChild(firstClone);
+
+    track.insertBefore(
+        lastClone,
+        track.firstChild
+    );
+
+
+    /* =====================================================
+       CURRENT INDEX
+       
+       Because we added a clone before slide 1,
+       real slide 1 is now index 1.
+    ===================================================== */
+
+    let index = 1;
+
 
     let autoTimer = null;
 
     let startX = null;
 
+    let isAnimating = false;
+
 
     /* =====================================================
        RENDER
-       ===================================================== */
+    ===================================================== */
 
-    function render() {
+    function render(animate = true) {
+
+        track.style.transition = animate
+            ? 'transform 500ms ease-in-out'
+            : 'none';
+
 
         track.style.transform =
             `translateX(-${index * 100}%)`;
+
+
+        updateDots();
+
+        updatePointLabel();
+
+    }
+
+
+    /* =====================================================
+       DOTS
+    ===================================================== */
+
+    function updateDots() {
+
+        let realIndex =
+            index - 1;
+
+
+        /*
+         * Clone at the end
+         */
+
+        if (realIndex >= total) {
+
+            realIndex = 0;
+
+        }
+
+
+        /*
+         * Clone at the beginning
+         */
+
+        if (realIndex < 0) {
+
+            realIndex = total - 1;
+
+        }
 
 
         dots.forEach((dot, i) => {
 
             dot.classList.toggle(
                 'active',
-                i === index
+                i === realIndex
             );
 
         });
 
+    }
+
+
+    /* =====================================================
+       POINT LABEL
+    ===================================================== */
+
+    function updatePointLabel() {
+
+        let realIndex =
+            index - 1;
+
+
+        if (realIndex >= total) {
+
+            realIndex = 0;
+
+        }
+
+
+        if (realIndex < 0) {
+
+            realIndex = total - 1;
+
+        }
+
 
         pointLabel.textContent =
-            `POINT ${String(index + 1).padStart(2, '0')} OF ${String(total).padStart(2, '0')}`;
+            `POINT ${String(realIndex + 1).padStart(2, '0')} OF ${String(total).padStart(2, '0')}`;
 
     }
 
 
     /* =====================================================
        CHANGE SLIDE
-       ===================================================== */
+    ===================================================== */
 
-    function goTo(indexValue) {
+    function goTo(newIndex) {
 
-        index =
-            (indexValue + total) % total;
+        if (isAnimating) return;
 
-        render();
+
+        index = newIndex;
+
+        isAnimating = true;
+
+
+        render(true);
 
         resetAuto();
 
@@ -1326,24 +1451,91 @@
 
 
     /* =====================================================
-       BUTTONS
-       ===================================================== */
+       HANDLE SEAMLESS LOOP
+       
+       When:
+       
+       8 → cloned 1
+       
+       we instantly move to the real 1
+       AFTER the animation finishes.
+    ===================================================== */
 
-    prevBtn.addEventListener(
-        'click',
-        () => goTo(index - 1)
-    );
+    track.addEventListener(
+        'transitionend',
+        () => {
+
+            /*
+             * Reached cloned slide 1
+             */
+
+            if (index === total + 1) {
+
+                index = 1;
+
+                render(false);
+
+            }
 
 
-    nextBtn.addEventListener(
-        'click',
-        () => goTo(index + 1)
+            /*
+             * Reached cloned slide 8
+             */
+
+            if (index === 0) {
+
+                index = total;
+
+                render(false);
+
+            }
+
+
+            isAnimating = false;
+
+        }
     );
 
 
     /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    if (prevBtn) {
+
+        prevBtn.addEventListener(
+            'click',
+            () => {
+
+                if (isAnimating) return;
+
+                goTo(index - 1);
+
+            }
+        );
+
+    }
+
+
+    if (nextBtn) {
+
+        nextBtn.addEventListener(
+            'click',
+            () => {
+
+                if (isAnimating) return;
+
+                goTo(index + 1);
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
        DOTS
-       ===================================================== */
+    ===================================================== */
 
     dots.forEach(dot => {
 
@@ -1351,12 +1543,22 @@
             'click',
             () => {
 
-                goTo(
+                if (isAnimating) return;
+
+
+                const dotIndex =
                     parseInt(
                         dot.dataset.index,
                         10
-                    )
-                );
+                    );
+
+
+                /*
+                 * Real slide index starts at 1
+                 * because of the cloned slide.
+                 */
+
+                goTo(dotIndex + 1);
 
             }
         );
@@ -1366,7 +1568,7 @@
 
     /* =====================================================
        KEYBOARD
-       ===================================================== */
+    ===================================================== */
 
     viewport.addEventListener(
         'keydown',
@@ -1376,7 +1578,11 @@
 
                 event.preventDefault();
 
-                goTo(index - 1);
+                if (!isAnimating) {
+
+                    goTo(index - 1);
+
+                }
 
             }
 
@@ -1385,7 +1591,11 @@
 
                 event.preventDefault();
 
-                goTo(index + 1);
+                if (!isAnimating) {
+
+                    goTo(index + 1);
+
+                }
 
             }
 
@@ -1395,7 +1605,7 @@
 
     /* =====================================================
        SWIPE
-       ===================================================== */
+    ===================================================== */
 
     viewport.addEventListener(
         'touchstart',
@@ -1416,6 +1626,14 @@
         event => {
 
             if (startX === null) return;
+
+            if (isAnimating) {
+
+                startX = null;
+
+                return;
+
+            }
 
 
             const endX =
@@ -1452,17 +1670,25 @@
 
     /* =====================================================
        AUTO PLAY
-       ===================================================== */
+    ===================================================== */
 
     function startAuto() {
 
         clearInterval(autoTimer);
 
-        autoTimer =
-            setInterval(
-                () => goTo(index + 1),
-                4000
-            );
+
+        autoTimer = setInterval(
+            () => {
+
+                if (!isAnimating) {
+
+                    goTo(index + 1);
+
+                }
+
+            },
+            4000
+        );
 
     }
 
@@ -1482,6 +1708,24 @@
 
     }
 
+
+    /* =====================================================
+       PAUSE WHEN MOUSE IS OVER CAROUSEL
+    ===================================================== */
+
+    viewport.addEventListener(
+        'mouseenter',
+        stopAuto
+    );
+
+
+    viewport.addEventListener(
+        'mouseleave',
+        startAuto
+    );
+
+
+ 
 
     /* =====================================================
        PAUSE ON HOVER

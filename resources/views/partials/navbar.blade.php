@@ -1,6 +1,9 @@
-<nav
-    id="navbar"
-    class="fixed top-0 left-0 w-full bg-blue-800/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300"
+<nav 
+    id="navbar" 
+    class="fixed top-0 left-0 w-full 
+           bg-blue-800/95 backdrop-blur-md shadow-lg z-50
+           transition-all duration-500 ease-in-out
+           translate-y-0 opacity-100"
 >
 
     <div class="max-w-7xl mx-auto px-6">
@@ -12,27 +15,27 @@
                     TESDA Logo / Brand
             ============================ -->
 
-            <a
-                href="{{ url('/') }}"
+            <a 
+                href="{{ url('/') }}" 
                 class="flex items-center gap-4"
             >
 
-                <img
-                    src="{{ asset('images/TESDA Logo official.png') }}"
+                <img 
+                    src="{{ asset('images/TESDA Logo official.png') }}" 
                     alt="TESDA Logo"
                     class="w-12 h-12 object-contain"
                 >
 
                 <div class="hidden md:block">
 
-                    <h1
-                        class="text-white text-xl font-bold tracking-wide"
+                    <h1 
+                        class="text-white text-xl font-bold tracking-wide font-[Frutiger]"
                     >
                         TESDA
                     </h1>
 
-                    <p
-                        class="text-blue-100 text-sm font-[Frutiger] "
+                    <p 
+                        class="text-blue-100 text-sm font-[Frutiger]"
                     >
                         Negros Island Region
                     </p>
@@ -46,21 +49,22 @@
                     Desktop Navigation
             ============================ -->
 
-            <ul
-                class="hidden lg:flex items-center gap-8
+            <ul 
+                class="hidden lg:flex items-center gap-8 
                        text-white font-bold"
             >
 
                 <!-- Home -->
+
                 <li>
 
-                    <a
-                        href="{{ url('/') }}"
-                        class= "font-[Frutiger] transition duration-300
+                    <a 
+                        href="{{ url('/') }}" 
+                        class="font-[Frutiger] transition duration-300 
                                border-b-2 pb-1
-                               {{ request()->is('/')
-                                    ? 'text-amber-300 border-amber-300'
-                                    : 'border-transparent hover:text-amber-300 hover:border-amber-300'
+                               {{ request()->is('/') 
+                                    ? 'text-amber-300 border-amber-300' 
+                                    : 'border-transparent hover:text-amber-300 hover:border-amber-300' 
                                }}"
                     >
                         Home
@@ -70,23 +74,27 @@
 
 
                 <!-- About -->
+
                 @include('partials.navigation.about')
 
-                
+
                 <!-- Transparency -->
+
                 @include('partials.navigation.transparency')
 
 
                 <!-- Programs & Services -->
+
                 @include('partials.navigation.programs-services')
 
 
                 <!-- News -->
+
                 <li>
 
-                    <a
+                    <a 
                         href="{{ route('newsmain') }}"
-                        class="transition duration-300
+                        class="font-[Frutiger] transition duration-300
                                border-b-2 border-transparent
                                pb-1
                                hover:text-amber-300
@@ -98,9 +106,8 @@
                 </li>
 
 
-
-
                 <!-- Contact -->
+
                 @include('partials.navigation.allcontact')
 
             </ul>
@@ -110,17 +117,18 @@
                     Mobile Menu Button
             ============================ -->
 
-            <button
-                id="menuButton"
+            <button 
+                id="menuButton" 
                 type="button"
                 aria-label="Open navigation menu"
+                aria-expanded="false"
                 class="lg:hidden
                        text-white
                        hover:text-amber-300
-                       transition"
+                       transition duration-300"
             >
 
-                <svg
+                <svg 
                     class="w-8 h-8"
                     fill="none"
                     stroke="currentColor"
@@ -128,7 +136,7 @@
                     aria-hidden="true"
                 >
 
-                    <path
+                    <path 
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -153,7 +161,10 @@
 </nav>
 
 
-<!-- Navbar Spacer -->
+<!-- ===========================
+        Navbar Spacer
+============================ -->
+
 <div class="h-20"></div>
 
 
@@ -161,8 +172,18 @@
 
 <script>
 
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const navbar = document.getElementById('navbar');
     const button = document.getElementById('menuButton');
     const menu = document.getElementById('mobileMenu');
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
 
     if (button && menu) {
 
@@ -170,9 +191,151 @@
 
             menu.classList.toggle('hidden');
 
+            const isOpen = !menu.classList.contains('hidden');
+
+            button.setAttribute(
+                'aria-expanded',
+                isOpen ? 'true' : 'false'
+            );
+
+
+            /*
+             * Keep navbar visible while mobile menu
+             * is open.
+             */
+
+            if (isOpen) {
+
+                navbar.classList.remove(
+                    '-translate-y-full',
+                    'opacity-0'
+                );
+
+                navbar.classList.add(
+                    'translate-y-0',
+                    'opacity-100'
+                );
+
+            }
+
         });
 
     }
+
+
+    /* =====================================================
+       NAVBAR SCROLL EFFECT
+       
+       Scroll DOWN  → Hide navbar
+       Scroll UP    → Show navbar
+       Top of page  → Always show navbar
+    ===================================================== */
+
+    let lastScrollY = window.scrollY;
+
+    let ticking = false;
+
+
+    function handleNavbarScroll() {
+
+        const currentScrollY = window.scrollY;
+
+
+        /*
+         * Always show navbar when at the top
+         */
+
+        if (currentScrollY <= 80) {
+
+            navbar.classList.remove(
+                '-translate-y-full',
+                'opacity-0'
+            );
+
+            navbar.classList.add(
+                'translate-y-0',
+                'opacity-100'
+            );
+
+        }
+
+
+        /*
+         * SCROLLING DOWN
+         */
+
+        else if (currentScrollY > lastScrollY) {
+
+            /*
+             * Don't hide navbar while
+             * mobile menu is open.
+             */
+
+            if (!menu || menu.classList.contains('hidden')) {
+
+                navbar.classList.remove(
+                    'translate-y-0',
+                    'opacity-100'
+                );
+
+                navbar.classList.add(
+                    '-translate-y-full',
+                    'opacity-0'
+                );
+
+            }
+
+        }
+
+
+        /*
+         * SCROLLING UP
+         */
+
+        else if (currentScrollY < lastScrollY) {
+
+            navbar.classList.remove(
+                '-translate-y-full',
+                'opacity-0'
+            );
+
+            navbar.classList.add(
+                'translate-y-0',
+                'opacity-100'
+            );
+
+        }
+
+
+        /*
+         * Update previous scroll position
+         */
+
+        lastScrollY = currentScrollY;
+
+        ticking = false;
+
+    }
+
+
+    /* =====================================================
+       OPTIMIZED SCROLL LISTENER
+    ===================================================== */
+
+    window.addEventListener('scroll', () => {
+
+        if (!ticking) {
+
+            window.requestAnimationFrame(
+                handleNavbarScroll
+            );
+
+            ticking = true;
+
+        }
+
+    });
+
 
 </script>
 
