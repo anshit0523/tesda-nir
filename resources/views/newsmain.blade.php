@@ -8,7 +8,7 @@
 
     <main>
 
-       
+        @include('component.cta')
         @include('newsandimpact.news')
          @include('newsandimpact.wall-of-success')
          @include('newsandimpact.partnership')

@@ -1,10 +1,25 @@
 <!-- Contact -->
 <li class="relative group">
 
+    @php
+        $contactActive =
+            request()->routeIs('contact.negros-occidental') ||
+            request()->routeIs('contact.negros-oriental') ||
+            request()->routeIs('contact.siquijor');
+    @endphp
+
+
     <!-- Button -->
     <button
         type="button"
-        class="flex items-center gap-2 py-2 transition duration-300 hover:text-amber-300">
+        class="flex items-center gap-2 py-2 font-[Frutiger]
+               border-b-2
+               transition duration-300
+               {{ $contactActive
+                    ? 'text-amber-300 border-amber-300'
+                    : 'text-white border-transparent hover:text-amber-300 hover:border-amber-300'
+               }}"
+    >
 
         Contact
 
@@ -12,20 +27,24 @@
             class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
             fill="none"
             stroke="currentColor"
-            viewBox="0 0 24 24">
+            viewBox="0 0 24 24"
+        >
 
             <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M19 9l-7 7-7-7" />
+                d="M19 9l-7 7-7-7"
+            />
 
         </svg>
 
     </button>
 
+
     <!-- Hover Buffer -->
     <div class="absolute right-0 top-full h-3 w-72"></div>
+
 
     <!-- Dropdown -->
     <div
@@ -35,58 +54,86 @@
                group-hover:visible
                group-hover:translate-y-0
                transition-all duration-300 ease-out
-               z-[9999]">
+               z-[9999]"
+    >
 
         <div class="bg-white rounded-xl border border-gray-200 shadow-xl overflow-hidden">
+
 
             <!-- Header -->
             <div class="px-6 py-4 bg-blue-900 text-white">
 
-                <h3 class="font-semibold text-lg">
+                <h3 class="font-semibold text-lg font-[Frutiger]">
                     Contact TESDA NIR
                 </h3>
 
-                <p class="text-xs text-blue-100 mt-1">
+                <p class="text-xs text-blue-100 mt-1 font-[Frutiger]">
                     Regional and Provincial Offices
                 </p>
 
             </div>
 
+
             <!-- Regional Headquarters -->
+            <!--
+                This stays linked to Home.
+                It is intentionally NOT included
+                in the Contact active-state logic.
+            -->
+
             <a
                 href="{{ url('/') }}#Contact"
-                class="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">
-
+                class="block px-6 py-3 font-[Frutiger]
+                       text-gray-700
+                       hover:bg-blue-50
+                       hover:text-blue-900
+                       transition"
+            >
                 Regional Headquarters
-
             </a>
+
 
             <!-- Negros Occidental -->
             <a
                 href="{{ route('contact.negros-occidental') }}"
-                class="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">
-
+                class="block px-6 py-3 font-[Frutiger]
+                       {{ request()->routeIs('contact.negros-occidental')
+                            ? 'bg-blue-50 text-blue-900 font-bold'
+                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+                       }}
+                       transition"
+            >
                 Negros Occidental
-
             </a>
+
 
             <!-- Negros Oriental -->
             <a
                 href="{{ route('contact.negros-oriental') }}"
-                class="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">
-
+                class="block px-6 py-3 font-[Frutiger]
+                       {{ request()->routeIs('contact.negros-oriental')
+                            ? 'bg-blue-50 text-blue-900 font-bold'
+                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+                       }}
+                       transition"
+            >
                 Negros Oriental
-
             </a>
+
 
             <!-- Siquijor -->
             <a
                 href="{{ route('contact.siquijor') }}"
-                class="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">
-
+                class="block px-6 py-3 font-[Frutiger]
+                       {{ request()->routeIs('contact.siquijor')
+                            ? 'bg-blue-50 text-blue-900 font-bold'
+                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+                       }}
+                       transition"
+            >
                 Siquijor
-
             </a>
+
 
         </div>
 

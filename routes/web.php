@@ -4,13 +4,22 @@ use App\Http\Controllers\ChatbotController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-
-});
+    return view('welcome');});
 
 Route::view('/mission-vision', 'about.mission-vision')
     ->name('mission-vision');
 
+ 
+
+Route::view('/transparency/seal','transparency.transparency-seal'
+)->name('transparency.seal');
+
+Route::view('/news', 'newsmain')->name('newsmain');
+
+
+Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
+
+# Contact Section Routes
 
 Route::view('/contact/regional-headquarters','contact.regional-headquarters'
 )->name('contact.regional-headquarters');
@@ -24,15 +33,6 @@ Route::view('/contact/negros-oriental','contact.negros-oriental'
 Route::view('/contact/siquijor', 'contact.siquijor'
 )->name('contact.siquijor');
 
+// API/Controller Routes
 
 Route::post('/chatbot', [ChatbotController::class, 'handle'])->name('chatbot.handle');
-
-Route::view('/transparency/seal','transparency.transparency-seal'
-)->name('transparency.seal');
-
-Route::view('/news', 'newsmain')->name('newsmain');
-
-
-Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
-
-

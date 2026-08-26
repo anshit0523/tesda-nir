@@ -90,20 +90,19 @@
 
                 <!-- News -->
 
-                <li>
-
-                    <a 
-                        href="{{ route('newsmain') }}"
-                        class="font-[Frutiger] transition duration-300
-                               border-b-2 border-transparent
-                               pb-1
-                               hover:text-amber-300
-                               hover:border-amber-300"
-                    >
-                        News & Impact
-                    </a>
-
-                </li>
+               <li>
+    <a 
+        href="{{ route('newsmain') }}"
+        class="font-[Frutiger] transition duration-300
+               border-b-2 pb-1
+               {{ request()->routeIs('newsmain') 
+                    ? 'text-amber-300 border-amber-300' 
+                    : 'border-transparent hover:text-amber-300 hover:border-amber-300'
+               }}"
+    >
+        News & Impact
+    </a>
+</li>
 
 
                 <!-- Contact -->

@@ -4,7 +4,7 @@
   <!-- SUBTLE TESDA WATERMARK -->
   <!-- ===================================================== -->
   <div
-    class="absolute inset-0 pointer-events-none bg-[url('/images/B.png')] bg-no-repeat bg-right-bottom bg-contain opacity-[0.035]"
+    class="absolute inset-0 pointer-events-none bg-contain opacity-[0.035]"
     aria-hidden="true">
   </div>
 

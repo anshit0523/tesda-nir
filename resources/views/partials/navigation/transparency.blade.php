@@ -1,9 +1,23 @@
 <!-- Transparency -->
 <li class="relative group">
 
+    @php
+        $transparencyActive =
+            request()->routeIs('transparency.seal');
+    @endphp
+
+
     <!-- Menu Button -->
     <button
-        class="flex items-center gap-2 py-2 transition duration-300 hover:text-amber-300">
+        type="button"
+        class="flex items-center gap-2 py-2 font-[Frutiger]
+               border-b-2
+               transition duration-300
+               {{ $transparencyActive
+                    ? 'text-amber-300 border-amber-300'
+                    : 'text-white border-transparent hover:text-amber-300 hover:border-amber-300'
+               }}"
+    >
 
         Transparency
 
@@ -11,51 +25,70 @@
             class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
             fill="none"
             stroke="currentColor"
-            viewBox="0 0 24 24">
+            viewBox="0 0 24 24"
+        >
 
             <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
+                d="M19 9l-7 7-7-7"
+            />
 
         </svg>
 
     </button>
 
+
     <!-- Hover Buffer -->
     <div class="absolute left-0 top-full w-72 h-3"></div>
 
+
     <!-- Dropdown -->
     <div
-         class="absolute left-1/2 -translate-x-1/2 top-full pt-3
-           opacity-0 invisible translate-y-3
-           group-hover:opacity-100
-           group-hover:visible
-           group-hover:translate-y-0
-           transition-all duration-300 ease-out">
+        class="absolute left-1/2 -translate-x-1/2 top-full pt-3
+               opacity-0 invisible translate-y-3
+               group-hover:opacity-100
+               group-hover:visible
+               group-hover:translate-y-0
+               transition-all duration-300 ease-out
+               z-[9999]"
+    >
 
         <div class="w-80 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
+
 
             <!-- Header -->
             <div class="px-6 py-5 bg-blue-900 text-white">
 
-                <h3 class="text-lg font-semibold">
+                <h3 class="text-lg font-semibold font-[Frutiger]">
                     Transparency
                 </h3>
 
-                <p class="text-sm text-blue-100 mt-1">
+                <p class="text-sm text-blue-100 mt-1 font-[Frutiger]">
                     Access official government documents and public information.
                 </p>
 
             </div>
 
-            <!-- Menu Items -->
 
-            <a href="{{ route('transparency.seal') }}"
-               class="block px-6 py-4 hover:bg-blue-50 transition">
+            <!-- Transparency Seal -->
+            <a
+                href="{{ route('transparency.seal') }}"
+                class="block px-6 py-4 font-[Frutiger]
+                       {{ request()->routeIs('transparency.seal')
+                            ? 'bg-blue-50 text-blue-900'
+                            : 'hover:bg-blue-50'
+                       }}
+                       transition"
+            >
 
-                <h4 class="font-medium text-gray-800">
+                <h4 class="font-medium
+                    {{ request()->routeIs('transparency.seal')
+                        ? 'text-blue-900 font-bold'
+                        : 'text-gray-800'
+                    }}"
+                >
                     Transparency Seal
                 </h4>
 
@@ -65,10 +98,16 @@
 
             </a>
 
-            <a href="#"
-               class="block px-6 py-4 hover:bg-blue-50 transition">
 
-                <h4 class="font-medium text-gray-800">
+            <!-- Citizen's Charter -->
+            <a
+                href="#"
+                class="block px-6 py-4 font-[Frutiger]
+                       text-gray-800 hover:bg-blue-50
+                       transition"
+            >
+
+                <h4 class="font-medium">
                     Citizen's Charter
                 </h4>
 
@@ -78,10 +117,16 @@
 
             </a>
 
-            <a href="#"
-               class="block px-6 py-4 hover:bg-blue-50 transition">
 
-                <h4 class="font-medium text-gray-800">
+            <!-- Bids & Awards Committee -->
+            <a
+                href="#"
+                class="block px-6 py-4 font-[Frutiger]
+                       text-gray-800 hover:bg-blue-50
+                       transition"
+            >
+
+                <h4 class="font-medium">
                     Bids & Awards Committee
                 </h4>
 
@@ -91,10 +136,16 @@
 
             </a>
 
-            <a href="#"
-               class="block px-6 py-4 hover:bg-blue-50 transition">
 
-                <h4 class="font-medium text-gray-800">
+            <!-- Downloadable Forms -->
+            <a
+                href="#"
+                class="block px-6 py-4 font-[Frutiger]
+                       text-gray-800 hover:bg-blue-50
+                       transition"
+            >
+
+                <h4 class="font-medium">
                     Downloadable Forms
                 </h4>
 
@@ -104,10 +155,16 @@
 
             </a>
 
-            <a href="#"
-               class="block px-6 py-4 hover:bg-blue-50 transition">
 
-                <h4 class="font-medium text-gray-800">
+            <!-- Issuances -->
+            <a
+                href="#"
+                class="block px-6 py-4 font-[Frutiger]
+                       text-gray-800 hover:bg-blue-50
+                       transition"
+            >
+
+                <h4 class="font-medium">
                     Issuances
                 </h4>
 
@@ -117,12 +174,18 @@
 
             </a>
 
-            <!-- Footer -->
 
+            <!-- Footer -->
             <div class="px-6 py-4 bg-gray-50 border-t">
 
-                <a href="#"
-                   class="inline-flex items-center text-blue-900 font-medium hover:text-blue-700">
+                <a
+                    href="#"
+                    class="inline-flex items-center
+                           text-blue-900 font-medium
+                           font-[Frutiger]
+                           hover:text-blue-700
+                           transition"
+                >
 
                     View Transparency Portal
 
@@ -130,19 +193,22 @@
                         class="ml-2 w-4 h-4"
                         fill="none"
                         stroke="currentColor"
-                        viewBox="0 0 24 24">
+                        viewBox="0 0 24 24"
+                    >
 
                         <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2"
-                            d="M9 5l7 7-7 7"/>
+                            d="M9 5l7 7-7 7"
+                        />
 
                     </svg>
 
                 </a>
 
             </div>
+
 
         </div>
 
