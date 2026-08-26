@@ -39,15 +39,33 @@
         width: 100%;
         line-height: 0;
         background: #fff;
+        overflow: hidden;
     }
 
- #agenda-page .agenda-header img {
-    display: block;
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: center;
-}
+    #agenda-page .agenda-header img {
+        display: block;
+        width: 100%;
+        height: 280px;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    /* =========================================================
+       TABLET HEADER
+       ========================================================= */
+
+    @media (max-width: 900px) {
+
+        #agenda-page .agenda-header img {
+            height: 220px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+    }
+
 
     /* =========================================================
        MAIN AREA
@@ -123,7 +141,9 @@
     }
 
 
-    /* Decorative diagonal */
+    /* =========================================================
+       DECORATIVE CIRCLE
+       ========================================================= */
 
     #agenda-page .agenda-left::after {
         content: "";
@@ -282,7 +302,9 @@
     }
 
 
-    /* SHOW ARROWS WHEN HOVERING CAROUSEL */
+    /* =========================================================
+       SHOW ARROWS WHEN HOVERING CAROUSEL
+       ========================================================= */
 
     #agenda-page .agenda-carousel:hover .agenda-arrow {
         opacity: 1;
@@ -428,6 +450,7 @@
         #agenda-page .agenda-description {
             font-size: 16px;
         }
+
     }
 
 
@@ -436,6 +459,19 @@
        ========================================================= */
 
     @media (max-width: 640px) {
+
+        /* -----------------------------------------------------
+           RESPONSIVE HEADER
+           ----------------------------------------------------- */
+
+        #agenda-page .agenda-header img {
+            width: 100%;
+            height: 150px;
+
+            object-fit: cover;
+            object-position: center center;
+        }
+
 
         #agenda-page .agenda-container {
             width: 100%;
@@ -547,6 +583,7 @@
         #agenda-page .agenda-point {
             margin-top: 10px;
         }
+
     }
 
 
@@ -555,6 +592,18 @@
        ========================================================= */
 
     @media (max-width: 390px) {
+
+        /* -----------------------------------------------------
+           SMALL PHONE HEADER
+           ----------------------------------------------------- */
+
+        #agenda-page .agenda-header img {
+            height: 125px;
+
+            object-fit: cover;
+            object-position: center center;
+        }
+
 
         #agenda-page .agenda-slide {
             min-height: 155px;
@@ -588,6 +637,7 @@
         #agenda-page .agenda-description {
             font-size: 10.5px;
         }
+
     }
 
 
@@ -611,6 +661,7 @@
         #agenda-page .agenda-track {
             transition: none;
         }
+
     }
 
 </style>
@@ -1047,9 +1098,10 @@
                             </h2>
 
                             <p class="agenda-description">
-                                Enhance global competitiveness of TVET graduates, by aligning TVET programs 
-                                with international standards. 
-                                Improve internal processes to increase efficiency in program implementation
+                                Enhance global competitiveness of TVET graduates,
+                                by aligning TVET programs with international
+                                standards. Improve internal processes to increase
+                                efficiency in program implementation.
                             </p>
 
                         </div>
@@ -1105,8 +1157,10 @@
                             </h2>
 
                             <p class="agenda-description">
-                              Enhance global competitiveness of TVET graduates, by aligning TVET programs with international standards. 
-                              Improve internal processes to increase efficiency in program implementation
+                                Enhance global competitiveness of TVET graduates,
+                                by aligning TVET programs with international standards.
+                                Improve internal processes to increase efficiency
+                                in program implementation.
                             </p>
 
                         </div>
@@ -1163,8 +1217,10 @@
                             </h2>
 
                             <p class="agenda-description">
-                              Enhance employability of SHS graduates by integrating TVET standards in SHS curriculum, 
-                              and enable multiple learning and career pathways through ladderization programs
+                                Enhance employability of SHS graduates by
+                                integrating TVET standards in SHS curriculum,
+                                and enable multiple learning and career pathways
+                                through ladderization programs.
                             </p>
 
                         </div>
@@ -1274,7 +1330,7 @@
 
     /* =====================================================
        ORIGINAL SLIDES
-    ===================================================== */
+       ===================================================== */
 
     const originalSlides = [
         ...track.children
@@ -1288,13 +1344,11 @@
 
     /* =====================================================
        CLONE FIRST + LAST SLIDES
-       
-       Example:
-       
+
        [8] [1] [2] [3] [4] [5] [6] [7] [8] [1]
-        ↑                         ↑
-      clone                      clone
-    ===================================================== */
+        ↑                                  ↑
+      clone                              clone
+       ===================================================== */
 
     const firstClone =
         originalSlides[0].cloneNode(true);
@@ -1318,10 +1372,9 @@
 
     /* =====================================================
        CURRENT INDEX
-       
-       Because we added a clone before slide 1,
-       real slide 1 is now index 1.
-    ===================================================== */
+
+       Real slide 1 = index 1
+       ===================================================== */
 
     let index = 1;
 
@@ -1335,7 +1388,7 @@
 
     /* =====================================================
        RENDER
-    ===================================================== */
+       ===================================================== */
 
     function render(animate = true) {
 
@@ -1357,7 +1410,7 @@
 
     /* =====================================================
        DOTS
-    ===================================================== */
+       ===================================================== */
 
     function updateDots() {
 
@@ -1365,20 +1418,12 @@
             index - 1;
 
 
-        /*
-         * Clone at the end
-         */
-
         if (realIndex >= total) {
 
             realIndex = 0;
 
         }
 
-
-        /*
-         * Clone at the beginning
-         */
 
         if (realIndex < 0) {
 
@@ -1401,7 +1446,7 @@
 
     /* =====================================================
        POINT LABEL
-    ===================================================== */
+       ===================================================== */
 
     function updatePointLabel() {
 
@@ -1431,7 +1476,7 @@
 
     /* =====================================================
        CHANGE SLIDE
-    ===================================================== */
+       ===================================================== */
 
     function goTo(newIndex) {
 
@@ -1452,14 +1497,7 @@
 
     /* =====================================================
        HANDLE SEAMLESS LOOP
-       
-       When:
-       
-       8 → cloned 1
-       
-       we instantly move to the real 1
-       AFTER the animation finishes.
-    ===================================================== */
+       ===================================================== */
 
     track.addEventListener(
         'transitionend',
@@ -1499,7 +1537,7 @@
 
     /* =====================================================
        BUTTONS
-    ===================================================== */
+       ===================================================== */
 
     if (prevBtn) {
 
@@ -1535,7 +1573,7 @@
 
     /* =====================================================
        DOTS
-    ===================================================== */
+       ===================================================== */
 
     dots.forEach(dot => {
 
@@ -1553,11 +1591,6 @@
                     );
 
 
-                /*
-                 * Real slide index starts at 1
-                 * because of the cloned slide.
-                 */
-
                 goTo(dotIndex + 1);
 
             }
@@ -1568,7 +1601,7 @@
 
     /* =====================================================
        KEYBOARD
-    ===================================================== */
+       ===================================================== */
 
     viewport.addEventListener(
         'keydown',
@@ -1605,7 +1638,7 @@
 
     /* =====================================================
        SWIPE
-    ===================================================== */
+       ===================================================== */
 
     viewport.addEventListener(
         'touchstart',
@@ -1626,6 +1659,7 @@
         event => {
 
             if (startX === null) return;
+
 
             if (isAnimating) {
 
@@ -1670,7 +1704,7 @@
 
     /* =====================================================
        AUTO PLAY
-    ===================================================== */
+       ===================================================== */
 
     function startAuto() {
 
@@ -1711,7 +1745,7 @@
 
     /* =====================================================
        PAUSE WHEN MOUSE IS OVER CAROUSEL
-    ===================================================== */
+       ===================================================== */
 
     viewport.addEventListener(
         'mouseenter',
@@ -1724,8 +1758,6 @@
         startAuto
     );
 
-
- 
 
     /* =====================================================
        PAUSE ON HOVER
@@ -1753,4 +1785,5 @@
 
 })();
 </script>
+
 @endpush
