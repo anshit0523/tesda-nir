@@ -392,7 +392,7 @@
                                        hover:text-blue-900
                                        transition"
                             >
-                                (035) 123-4567
+                               0960 396 1296
                             </a>
 
                         </div>

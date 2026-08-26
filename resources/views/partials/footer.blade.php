@@ -74,7 +74,7 @@
 
             <!-- FACEBOOK -->
             <a
-              href="#"
+              href="https://web.facebook.com/OfficialTESDANIR"
               class="w-11 h-11 rounded-full border border-slate-500/70 bg-blue-900/70 flex items-center justify-center text-white hover:bg-amber-500 hover:text-blue-950 hover:border-amber-400 transition-all duration-300"
               aria-label="Facebook"
             >
@@ -286,7 +286,7 @@
       href="tel:"
       class="text-slate-300 text-sm hover:text-amber-400 transition-colors duration-200"
     >
-      (035) 123-4567
+     0960 396 1296
     </a>
   </div>
 

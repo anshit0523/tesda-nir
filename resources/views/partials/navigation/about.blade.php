@@ -10,31 +10,19 @@
     @endphp
 
     <!-- Button -->
-    <button
-        type="button"
-        class="flex items-center gap-2 py-2 font-[Frutiger]
+    <button type="button" class="flex items-center gap-2 py-2 font-[Frutiger]
                border-b-2
                transition duration-300
                {{ $aboutActive
-                    ? 'text-amber-300 border-amber-300'
-                    : 'text-white border-transparent hover:text-amber-300 hover:border-amber-300'
-               }}"
-    >
+    ? 'text-amber-300 border-amber-300'
+    : 'text-white border-transparent hover:text-amber-300 hover:border-amber-300'
+               }}">
 
         About Us
 
-        <svg
-            class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-            />
+        <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
         </svg>
 
     </button>
@@ -45,15 +33,13 @@
 
 
     <!-- Dropdown -->
-    <div
-        class="absolute left-0 top-full pt-3 w-72
+    <div class="absolute left-0 top-full pt-3 w-72
                opacity-0 invisible translate-y-2
                group-hover:opacity-100
                group-hover:visible
                group-hover:translate-y-0
                transition-all duration-300 ease-out
-               z-[9999]"
-    >
+               z-[9999]">
 
         <div class="bg-white rounded-xl border border-gray-200 shadow-xl overflow-hidden">
 
@@ -74,56 +60,44 @@
 
             <!-- Links -->
 
-            <a
-                href="{{ url('/regional-profile') }}"
-                class="block px-6 py-3 font-[Frutiger]
+            <a href="{{ url('/regional-history') }}" class="block px-6 py-3 font-[Frutiger]
                        {{ request()->is('regional-profile')
-                            ? 'bg-blue-50 text-blue-900 font-bold'
-                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+    ? 'bg-blue-50 text-blue-900 font-bold'
+    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
                        }}
-                       transition"
-            >
+                       transition">
                 History
             </a>
 
 
-            <a
-                href="{{ route('mission-vision') }}"
-                class="block px-6 py-3 font-[Frutiger]
+            <a href="{{ route('mission-vision') }}" class="block px-6 py-3 font-[Frutiger]
                        {{ request()->routeIs('mission-vision')
-                            ? 'bg-blue-50 text-blue-900 font-bold'
-                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+    ? 'bg-blue-50 text-blue-900 font-bold'
+    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
                        }}
-                       transition"
-            >
+                       transition">
                 Mission, Vision & Core Values
             </a>
 
 
-            <a
-                href="{{ url('/organizational-structure') }}"
-                class="block px-6 py-3 font-[Frutiger]
+            <a href="{{ url('/organizational-structure') }}" class="block px-6 py-3 font-[Frutiger]
                        {{ request()->is('organizational-structure')
-                            ? 'bg-blue-50 text-blue-900 font-bold'
-                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+    ? 'bg-blue-50 text-blue-900 font-bold'
+    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
                        }}
-                       transition"
-            >
+                       transition">
                 Organizational Structure
             </a>
 
 
-            <a
-                href="{{ url('/regional-director') }}"
-                class="block px-6 py-3 font-[Frutiger]
-                       {{ request()->is('regional-director')
-                            ? 'bg-blue-50 text-blue-900 font-bold'
-                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
-                       }}
-                       transition"
-            >
+           {{--<a href="{{ url('/regional-director') }}" id="rd-link" class="block px-6 py-3 font-[Frutiger]
+           {{ request()->is('regional-director')
+    ? 'bg-blue-50 text-blue-900 font-bold'
+    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+           }}
+           transition">
                 Regional Director
-            </a>
+            </a>--}}
 
         </div>
 

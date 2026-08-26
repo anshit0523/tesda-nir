@@ -60,7 +60,7 @@
                         Training Programs
                     </h4>
 
-                    <a href="#"
+                    <a href="{{ route('training.course') }}"
                        class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
                         <span class="font-medium text-gray-800">
