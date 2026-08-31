@@ -11,6 +11,7 @@
         @include('home.hero')
 @include('component.Agenda')
         @include('home.rd-message')
+        @include('component.statistic')
 
         @include('home.programs')
 

@@ -54,7 +54,7 @@
                 {{-- ACTION BUTTONS --}}
                 <div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <a 
-                        href="{{ $readMoreUrl }}"
+                        href="https://web.facebook.com/publicusasia/posts/pq2-2026-results-tesda-leads-in-both-approval-63-and-trust-45-followed-by-dost-5/1451805166976902/?_rdc=1&_rdr#"
                         class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0041A5] hover:bg-[#0B2A5B] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 group"
                     >
                         <span>Read Full Story</span>
@@ -92,27 +92,6 @@
 
         </div>
 
-        {{-- BOTTOM FOOTER & SURVEY QUESTION CITATION --}}
-        <div class="mt-14 pt-6 border-t border-slate-300/80 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-            
-            {{-- SURVEY QUESTION --}}
-            <div class="md:col-span-8">
-                <p class="text-xs sm:text-sm text-slate-500 italic leading-relaxed">
-                    {{ $surveyQuestion }}
-                </p>
-            </div>
-
-            {{-- SURVEY SERIES BRANDING --}}
-            <div class="md:col-span-4 flex items-center justify-start md:justify-end gap-3">
-                <div class="px-3 py-1 rounded bg-[#0041A5] text-white font-extrabold text-xs uppercase tracking-wider">
-                    Pahayag
-                </div>
-                <div class="text-xs font-bold text-[#0B2A5B] uppercase tracking-wider">
-                    Quarterly Survey Series
-                </div>
-            </div>
-
-        </div>
-
+       
     </div>
 </section>

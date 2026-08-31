@@ -259,8 +259,8 @@
                                        text-gray-600
                                        leading-7"
                             >
-                                Talisay City, Felipe Lacson St.,
-                                Talisay, Negros Occidental,
+                                TESDA RTC-Talisay Campus ,Talisay City, Felipe Lacson St.
+                                <br> Talisay, Negros Occidental,
                                 Philippines
                             </p>
 

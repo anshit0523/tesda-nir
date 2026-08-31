@@ -41,12 +41,25 @@ Route::view('/awards-committe','transparency.awards-committe'
 
 
 
-Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
+
 
 # Programs & Services Section Routes
 
-Route::view('/training/course', 'training.course'
-)->name('training.course');
+Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
+
+Route::view('/training/course', 'schoolarship.course')
+    ->name('training.course');
+Route::view('/trainingcenter', 'schoolarship.trainingcenter')
+    ->name('schoolarship.trainingcenter');
+Route::view('/mrtop', 'schoolarship.mrtop')
+        ->name('schoolarship.mrtop');
+Route::view('/assessment', 'schoolarship.assessment-cert')
+        ->name('schoolarship.assessment-cert');
+ Route::view('/cacn', 'schoolarship.cacn')
+        ->name('schoolarship.cacn');
+
+Route::view('/tesda-online', 'schoolarship.tesda-online')
+        ->name('schoolarship.tesda-online');
 
 
 # Contact Section Routes

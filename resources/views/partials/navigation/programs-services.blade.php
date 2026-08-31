@@ -33,11 +33,12 @@
            group-hover:opacity-100
            group-hover:visible
            group-hover:translate-y-0
-           transition-all duration-300 ease-out">
+           transition-all duration-300 ease-out
+           z-[9999]">
 
         <div class="w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
 
-            <!-- Header -->
+            <!-- Header - NOT SCROLLABLE -->
             <div class="px-8 py-5 bg-blue-900 text-white">
 
                 <h3 class="text-lg font-semibold">
@@ -50,108 +51,130 @@
 
             </div>
 
-            <!-- Content -->
-            <div class="grid grid-cols-2 gap-6 p-6">
+            <!-- ONLY THIS CONTENT SCROLLS -->
+            <div class="max-h-[280px] overflow-y-auto direction-rtl">
 
-                <!-- LEFT COLUMN -->
-                <div>
+                <div class="direction-ltr">
 
-                    <h4 class="text-blue-900 font-semibold mb-3">
-                        Training Programs
-                    </h4>
+                    <!-- Content -->
+                    <div class="grid grid-cols-2 gap-6 p-6">
 
-                    <a href="{{ route('training.course') }}"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                        <!-- LEFT COLUMN -->
+                        <div>
 
-                        <span class="font-medium text-gray-800">
-                            Courses
-                        </span>
+                            <h4 class="text-blue-900 font-semibold mb-3">
+                                Training Programs
+                            </h4>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            Browse available technical and vocational courses.
-                        </p>
+                            <a href="{{ route('training.course') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    </a>
+                                <span class="font-medium text-gray-800">
+                                    Courses
+                                </span>
 
-                    <a href="{{ route('scholarshipmain') }}"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Browse available technical and vocational courses.
+                                </p>
 
-                        <span class="font-medium text-gray-800">
-                            Scholarships
-                        </span>
+                            </a>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            View scholarship opportunities and qualifications.
-                        </p>
+                            <a href="{{ route('scholarshipmain') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    </a>
+                                <span class="font-medium text-gray-800">
+                                    Scholarships
+                                </span>
 
-                    <a href="#"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                                <p class="text-sm text-gray-500 mt-1">
+                                    View scholarship opportunities and qualifications.
+                                </p>
 
-                        <span class="font-medium text-gray-800">
-                            Training Centers
-                        </span>
+                            </a>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            Find TESDA-accredited training institutions.
-                        </p>
+                            <a href="{{ route('schoolarship.trainingcenter') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    </a>
+                                <span class="font-medium text-gray-800">
+                                    Training Centers
+                                </span>
 
-                </div>
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Find TESDA-accredited training institutions.
+                                </p>
 
-                <!-- RIGHT COLUMN -->
-                <div>
+                            </a>
 
-                    <h4 class="text-blue-900 font-semibold mb-3">
-                        Certification & Services
-                    </h4>
+                            <a href="{{ route('schoolarship.mrtop') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    <a href="#"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                                <span class="font-medium text-gray-800">
+                                    MRTOP
+                                </span>
 
-                        <span class="font-medium text-gray-800">
-                            Assessment & Certification
-                        </span>
+                                <p class="text-sm text-gray-500 mt-1">
+                                   Multi-Regional Training and Outreach Program (MRTOP) for skills development.
+                                </p>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            Learn about competency assessment and certification.
-                        </p>
+                            </a>
 
-                    </a>
+                        </div>
 
-                    <a href="#"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                        <!-- RIGHT COLUMN -->
+                        <div>
 
-                        <span class="font-medium text-gray-800">
-                            Check Eligibility
-                        </span>
+                            <h4 class="text-blue-900 font-semibold mb-3">
+                                Certification & Services
+                            </h4>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            Determine your eligibility for TESDA programs.
-                        </p>
+                            <a href="{{ route('schoolarship.assessment-cert') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    </a>
+                                <span class="font-medium text-gray-800">
+                                    Assessment & Certification
+                                </span>
 
-                    <a href="#"
-                       class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Learn about competency assessment and certification.
+                                </p>
 
-                        <span class="font-medium text-gray-800">
-                            TESDA Online Program
-                        </span>
+                            </a>
 
-                        <p class="text-sm text-gray-500 mt-1">
-                            Access free online learning and digital courses.
-                        </p>
+                            <a href="{{ route('schoolarship.cacn') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
-                    </a>
+                                <span class="font-medium text-gray-800">
+                                    CACN
+                                </span>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Determine your eligibility for TESDA programs.
+                                </p>
+
+                            </a>
+
+                            <a href="{{ route('schoolarship.tesda-online') }}"
+                               class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
+
+                                <span class="font-medium text-gray-800">
+                                    TESDA Online Program
+                                </span>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Access free online learning and digital courses.
+                                </p>
+
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <!-- Footer -->
+            <!-- Footer - NOT SCROLLABLE -->
             <div class="px-6 py-4 bg-gray-50 border-t">
 
                 <a href="#"

@@ -59,7 +59,7 @@
 
                     <div class="partner-logo" data-name="Qualfon">
                         <img
-                            src="{{ asset('images/partners/qualfon.png') }}"
+                            src="{{ asset('images/partners/ATINO.png') }}"
                             alt="Qualfon"
                         >
                     </div>
@@ -177,16 +177,16 @@
 
                 <div class="partners-group">
 
-                    <div class="partner-logo" data-name="Partner 7">
+                    <div class="partner-logo logo-boost"  data-name="Partner 7">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            src="{{ asset('images/partners/LGU-BAIS.png') }}"
                             alt="Partner 7"
                         >
                     </div>
 
                     <div class="partner-logo" data-name="Partner 8">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            src="{{ asset('images/partners/LGU-GUIHULNGAN.png') }}"
                             alt="Partner 8"
                         >
                     </div>
@@ -234,14 +234,14 @@
 
                     <div class="partner-logo" data-name="Partner 7">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            src="{{ asset('images/partners/LGU-BAIS.png') }}"
                             alt=""
                         >
                     </div>
 
                     <div class="partner-logo" data-name="Partner 8">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            src="{{ asset('images/partners/LGU-GUIHULNGAN.png') }}"
                             alt=""
                         >
                     </div>
@@ -388,32 +388,49 @@
        PARTNER LOGO
     ===================================================== */
 
-    .partner-logo {
+  .partner-logo {
 
-        position: relative;
+    position: relative;
 
-        flex-shrink: 0;
+    flex-shrink: 0;
 
-        display: flex;
+    display: flex;
 
-        align-items: center;
+    align-items: center;
 
-        justify-content: center;
+    justify-content: center;
 
-        height: 75px;
+    height: 75px;
 
-        width: 150px;
+    width: 150px;
 
-        padding: 0 20px;
+    padding: 0 20px;
 
-        opacity: 0.85;
+    opacity: 0.85;
 
-        transition:
-            opacity 0.25s ease,
-            transform 0.25s ease;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
 
-    }
+}
 
+.partner-logo img {
+
+    height: 100%;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    opacity: 0.9;
+
+}
 
     .partner-logo:hover {
 
@@ -423,24 +440,58 @@
 
     }
 
+    .partner-logo.logo-boost img {
+
+    transform: scale(1.4);
+
+}
 
     /* =====================================================
        IMAGE
     ===================================================== */
+.partner-logo {
 
-    .partner-logo img {
+    position: relative;
 
-        width: 100%;
+    flex-shrink: 0;
 
-        height: 100%;
+    display: flex;
 
-        object-fit: contain;
+    align-items: center;
 
-        display: block;
+    justify-content: center;
 
-        opacity: 0.9;
+    height: 75px;
 
-    }
+    width: 150px;
+
+    padding: 0 20px;
+
+    opacity: 0.85;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+.partner-logo img {
+
+    height: 100%;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    opacity: 0.9;
+
+}
 
 
     .partner-logo:hover img {

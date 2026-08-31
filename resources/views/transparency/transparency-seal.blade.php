@@ -225,7 +225,7 @@
     </div>
 </section>
 
-
+@include('partials.footer')
 
 
 <script>
@@ -242,4 +242,6 @@
     });
 </script>
 @endsection
+
+
 
