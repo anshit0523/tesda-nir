@@ -109,7 +109,7 @@
 
         <ul class="space-y-1.5 text-sm">
           <li>
-            <a href="#" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
+            <a href="{{ url('/') }}" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
               Home
             </a>
           </li>
@@ -124,7 +124,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
+            <a href="{{ route('newsmain') }}" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
               News
             </a>
           </li>
@@ -133,11 +133,7 @@
               Transparency
             </a>
           </li>
-          <li>
-            <a href="#" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
-              Resources
-            </a>
-          </li>
+         
           <li>
             <a href="#" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
               Contact

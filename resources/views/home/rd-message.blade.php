@@ -23,7 +23,7 @@
 
                     <p class="mt-2 text-gray-600">
 
-                        Acting Regional Director
+                         Regional Director
 
                     </p>
 
