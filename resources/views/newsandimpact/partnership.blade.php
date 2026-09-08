@@ -7,8 +7,7 @@
     Usage:
     @include('partials.partners-carousel')
 
-    Save to:
-    resources/views/partials/partners-carousel.blade.php
+   
 --}}
 
 <section class="relative py-16 overflow-hidden bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950">
@@ -19,11 +18,7 @@
 
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <img
-            src="{{ asset('images/B.png') }}"
-            alt=""
-            class="absolute inset-0 w-full h-full object-cover opacity-10"
-        >
+      
 
     </div>
 
@@ -57,45 +52,52 @@
 
                 <div class="partners-group">
 
-                    <div class="partner-logo" data-name="Qualfon">
+                    <div class="partner-logo" data-name="Atino">
                         <img
                             src="{{ asset('images/partners/ATINO.png') }}"
-                            alt="Qualfon"
+                            alt="Atino"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="TeamSkill">
+                    <div class="partner-logo" data-name="NOATI">
                         <img
-                            src="{{ asset('images/partners/teamskill.png') }}"
-                            alt="TeamSkill"
+                            src="{{ asset('images/partners/noati.png') }}"
+                            alt="NOATI"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 3">
+                    <div class="partner-logo" data-name="SATVI">
                         <img
-                            src="{{ asset('images/partners/logo3.png') }}"
-                            alt="Partner 3"
+                            src="{{ asset('images/partners/satvi.png') }}"
+                            alt="SATVI"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 4">
+                    <div class="partner-logo" data-name="Negros Oriental Seal">
                         <img
-                            src="{{ asset('images/partners/logo4.png') }}"
-                            alt="Partner 4"
+                            src="{{ asset('images/partners/negros orriental seal.png') }}"
+                            alt="Negros Oriental Seal"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 5">
+                    <div class="partner-logo" data-name="Negros Occidental Seal">
                         <img
-                            src="{{ asset('images/partners/logo5.png') }}"
-                            alt="Partner 5"
+                            src="{{ asset('images/partners/negros occidental.png') }}"
+                            alt="Negros Occidental Seal"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 6">
+                    <div class="partner-logo" data-name="Siquijor Provincial Seal">
                         <img
-                            src="{{ asset('images/partners/logo6.png') }}"
-                            alt="Partner 6"
+                            src="{{ asset('images/partners/Siquijor_Provincial_Seal.png') }}"
+                            alt="Siquijor Provincial Seal"
+                        >
+                    </div>
+
+                      <div class="partner-logo" data-name="TESDA Logo official">
+                        <img
+                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            alt="TESDA Logo official"
                         >
                     </div>
 
@@ -112,45 +114,52 @@
                     aria-hidden="true"
                 >
 
-                    <div class="partner-logo" data-name="Qualfon">
+                    <div class="partner-logo" data-name="Atino">
                         <img
-                            src="{{ asset('images/partners/qualfon.png') }}"
+                            src="{{ asset('images/partners/ATINO.png') }}"
                             alt=""
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="TeamSkill">
+                    <div class="partner-logo" data-name="NOATI">
                         <img
-                            src="{{ asset('images/partners/teamskill.png') }}"
+                            src="{{ asset('images/partners/noati.png') }}"
                             alt=""
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 3">
+                    <div class="partner-logo" data-name="SATVI">
                         <img
-                            src="{{ asset('images/partners/logo3.png') }}"
+                            src="{{ asset('images/partners/satvi.png') }}"
                             alt=""
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 4">
+                    <div class="partner-logo" data-name="Negros Oriental Seal">
                         <img
-                            src="{{ asset('images/partners/logo4.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/negros orriental seal.png') }}"
+                            alt="Negros Oriental Seal"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 5">
+                    <div class="partner-logo" data-name="Negros Occidental Seal">
                         <img
-                            src="{{ asset('images/partners/logo5.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/negros occidental.png') }}"
+                            alt="Negros Occidental Seal"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 6">
+                    <div class="partner-logo" data-name="Siquijor Provincial Seal">
                         <img
-                            src="{{ asset('images/partners/logo6.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/Siquijor_Provincial_Seal.png') }}"
+                            alt="Siquijor Provincial Seal"
+                        >
+                    </div>
+
+                      <div class="partner-logo" data-name="TESDA Logo official">
+                        <img
+                            src="{{ asset('images/TESDA Logo official.png') }}"
+                            alt="TESDA Logo official"
                         >
                     </div>
 
@@ -161,6 +170,7 @@
         </div>
 
 
+        
         <!-- =================================================
              ROW 2
              LEFT → RIGHT
