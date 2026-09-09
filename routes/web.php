@@ -40,9 +40,6 @@ Route::view('/awards-committe','transparency.awards-committe'
 
 
 
-
-
-
 # Programs & Services Section Routes
 
 Route::view('/scholarships', 'scholarshipmain')->name('scholarshipmain');
@@ -51,10 +48,13 @@ Route::view('/training/course', 'schoolarship.course')
     ->name('training.course');
 Route::view('/trainingcenter', 'schoolarship.trainingcenter')
     ->name('schoolarship.trainingcenter');
+
 Route::view('/mrtop', 'schoolarship.mrtop')
         ->name('schoolarship.mrtop');
-Route::view('/assessment', 'schoolarship.assessment-cert')
-        ->name('schoolarship.assessment-cert');
+
+Route::view('/asessment-certification', 'schoolarship.asessment-cert')
+        ->name('schoolarship.asessment-cert');
+
  Route::view('/cacn', 'schoolarship.cacn')
         ->name('schoolarship.cacn');
 

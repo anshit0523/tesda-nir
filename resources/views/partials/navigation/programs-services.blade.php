@@ -127,7 +127,7 @@
                                 Certification & Services
                             </h4>
 
-                            <a href="{{ route('schoolarship.assessment-cert') }}"
+                            <a href="{{ route('schoolarship.asessment-cert') }}"
                                class="block rounded-lg px-4 py-3 hover:bg-blue-50 transition">
 
                                 <span class="font-medium text-gray-800">

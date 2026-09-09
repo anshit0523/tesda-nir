@@ -46,7 +46,7 @@ Regional Director: Niña Connie G. Dodd
 Address: Dumaguete City, Negros Oriental, Philippines
 Email: nir@tesda.gov.ph
 Telephone: 0960 396 1296
-Office Hours: Monday to Friday, 8:00 AM to 5:00 PM
+Office Hours: Monday to Friday, 8:00 AM to 7:00 PM
 
 Negros Occidental Provincial Office:
 Office: TESDA RTC-Talisay Campus

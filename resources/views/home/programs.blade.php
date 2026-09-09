@@ -42,13 +42,13 @@
           'title' => 'Training Centers',
           'desc'  => 'Accredited TESDA Technology Institutions and partner centers offering hands-on technical-vocational courses.',
           'icon'  => 'building-office',
-          'link'  => '/training-centers',
+          'link'  => '/trainingcenter',
         ],
         [
           'title' => 'Assessment & Certification',
           'desc'  => 'Competency assessments leading to nationally recognized National Certificates (NC) and Certificates of Competency (COC).',
           'icon'  => 'badge-check',
-          'link'  => '/assessment-certification',
+          'link'  => '/asessment-certification',
         ],
       ] as $program)
 
