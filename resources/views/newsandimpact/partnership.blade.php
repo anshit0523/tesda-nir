@@ -149,7 +149,7 @@
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Siquijor Provincial Seal">
+                    <div class="partner-logo" data-name="Siquijor Provincial Seal ">
                         <img
                             src="{{ asset('images/partners/Siquijor_Provincial_Seal.png') }}"
                             alt="Siquijor Provincial Seal"
@@ -187,45 +187,55 @@
 
                 <div class="partners-group">
 
-                    <div class="partner-logo logo-boost"  data-name="Partner 7">
+                    <div class="partner-logo"  data-name="LGU-BAIS">
                         <img
                             src="{{ asset('images/partners/LGU-BAIS.png') }}"
-                            alt="Partner 7"
+                            alt="LGU-BAIS"
+                            style="transform: scale(1.2);"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 8">
+                    <div class="partner-logo" data-name="LGU-GUIHULNGAN">
                         <img
                             src="{{ asset('images/partners/LGU-GUIHULNGAN.png') }}"
-                            alt="Partner 8"
+                            alt="LGU-GUIHULNGAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 9">
+                    <div class="partner-logo" data-name="LGU-BAYAWAN">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt="Partner 9"
+                            src="{{ asset('images/partners/Bayawan_LGU_logo.png') }}"
+                            alt="LGU-BAYAWAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 10">
+                    <div class="partner-logo" data-name="LGU-KABANKALAN">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt="Partner 10"
+                            src="{{ asset('images/partners/Kabankalan_City_seal.png') }}"
+                            alt="LGU-KABANKALAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 11">
+                    <div class="partner-logo" data-name="LGU-BACOLOD">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt="Partner 11"
+                            src="{{ asset('images/partners/Seal_of_Bacolod.png') }}"
+                            alt="LGU-BACOLOD"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 12">
+                    <div class="partner-logo" data-name="LGU-SILAY">
                         <img
-                            src="{{ asset('images/partners/qualfon.jpg') }}"
-                            alt="Partner 12"
+                            src="{{ asset('images/partners/Silay__Negros_Occidental.png') }}"
+                            alt="LGU-SILAY"
+                             style="transform: scale(1);"
+                        >
+                    </div>
+
+                      <div class="partner-logo" data-name="LGU-MARIA-SIQUIJOR">
+                        <img
+                            src="{{ asset('images/partners/maria-siquijor.png') }}"
+                            alt="LGU-MARIA-SIQUIJOR"
+                           
                         >
                     </div>
 
@@ -242,45 +252,55 @@
                     aria-hidden="true"
                 >
 
-                    <div class="partner-logo" data-name="Partner 7">
+                    <div class="partner-logo" data-name="LGU-BAIS">
                         <img
                             src="{{ asset('images/partners/LGU-BAIS.png') }}"
-                            alt=""
+                            alt="LGU-BAIS"
+                             style="transform: scale(1.2);"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 8">
+                    <div class="partner-logo" data-name="LGU-GUIHULNGAN">
                         <img
                             src="{{ asset('images/partners/LGU-GUIHULNGAN.png') }}"
-                            alt=""
+                            alt="LGU-GUIHULNGAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 9">
+                    <div class="partner-logo" data-name="LGU-BAYAWAN">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/Bayawan_LGU_logo.png') }}"
+                            alt="LGU-BAYAWAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 10">
+                    <div class="partner-logo" data-name="LGU-KABANKALAN">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/Kabankalan_City_seal.png') }}"
+                            alt="LGU-KABANKALAN"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 11">
+                    <div class="partner-logo" data-name="LGU-BACOLOD">
                         <img
-                            src="{{ asset('images/TESDA Logo official.png') }}"
-                            alt=""
+                            src="{{ asset('images/partners/Seal_of_Bacolod.png') }}"
+                            alt="LGU-BACOLOD"
                         >
                     </div>
 
-                    <div class="partner-logo" data-name="Partner 12">
+                    <div class="partner-logo" data-name="LGU-SILAY">
                         <img
-                            src="{{ asset('images/partners/qualfon.jpg') }}"
-                            alt=""
+                            src="{{ asset('images/partners/Silay__Negros_Occidental.png') }}"
+                            alt="LGU-SILAY"
+                             style="transform: scale(1);"
+                        >
+                    </div>
+
+                    <div class="partner-logo" data-name="LGU-MARIA-SIQUIJOR">
+                        <img
+                            src="{{ asset('images/partners/maria-siquijor.png') }}"
+                            alt="LGU-MARIA-SIQUIJOR"
+                            
                         >
                     </div>
 
