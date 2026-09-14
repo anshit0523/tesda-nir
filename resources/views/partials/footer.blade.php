@@ -100,7 +100,7 @@
       <div class="space-y-5">
 
         <h4 class="text-base font-bold uppercase tracking-wider text-amber-400">
-          Quick Links
+         About
         </h4>
 
         <!-- GOLD UNDERLINE -->
@@ -129,7 +129,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
+            <a href="{{ route('transparency.seal') }}" class="text-slate-300 hover:text-amber-400 transition-colors duration-200 block">
               Transparency
             </a>
           </li>
@@ -161,24 +161,20 @@
         <ul class="space-y-3 text-sm">
           <li>
             <a
-              href="#"
+              href="{{ route('scholarshipmain') }}"
               class="group flex items-center justify-between text-slate-300 hover:text-white transition-colors duration-200"
             >
               <span>Scholarships</span>
-              <span class="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                →
-              </span>
+             
             </a>
           </li>
           <li>
             <a
-              href="#"
+              href="{{ route('schoolarship.trainingcenter') }}"
               class="group flex items-center justify-between text-slate-300 hover:text-white transition-colors duration-200"
             >
               <span>Training Programs</span>
-              <span class="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                →
-              </span>
+             
             </a>
           </li>
           <li>
@@ -187,33 +183,19 @@
               class="group flex items-center justify-between text-slate-300 hover:text-white transition-colors duration-200"
             >
               <span>Assessment & Certification</span>
-              <span class="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                →
-              </span>
+          
             </a>
           </li>
           <li>
             <a
-              href="#"
+              href="{{ route('schoolarship.trainingcenter') }}"
               class="group flex items-center justify-between text-slate-300 hover:text-white transition-colors duration-200"
             >
               <span>Training Centers</span>
-              <span class="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                →
-              </span>
+             
             </a>
           </li>
-          <li>
-            <a
-              href="#"
-              class="group flex items-center justify-between text-slate-300 hover:text-white transition-colors duration-200"
-            >
-              <span>Online Services</span>
-              <span class="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                →
-              </span>
-            </a>
-          </li>
+         
         </ul>
 
       </div>
@@ -325,7 +307,7 @@
       ></path>
     </svg>
     <span class="text-slate-300 text-sm">
-      Mon - Fri: 8:00 AM - 5:00 PM
+      Mon - Fri: 8:00 AM - 7:00 PM
     </span>
   </div>
 

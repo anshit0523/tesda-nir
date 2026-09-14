@@ -174,7 +174,7 @@
 
             </div>
 
-            <!-- Footer - NOT SCROLLABLE -->
+            <!-- Footer - NOT SCROLLABLE 
             <div class="px-6 py-4 bg-gray-50 border-t">
 
                 <a href="#"
@@ -197,7 +197,7 @@
 
                 </a>
 
-            </div>
+            </div>-->
 
         </div>
 

@@ -114,10 +114,11 @@
 
                 <a href="{{ route('training.course') }}" class="block px-10 py-3 hover:bg-blue-800">Courses</a>
                 <a href="{{ route('scholarshipmain') }}" class="block px-10 py-3 hover:bg-blue-800">Scholarships</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Training Centers</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Assessment & Certification</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">Check Eligibility</a>
-                <a href="#" class="block px-10 py-3 hover:bg-blue-800">TESDA Online Program</a>
+                <a href="{{ route('schoolarship.mrtop') }}" class="block px-10 py-3 hover:bg-blue-800">MRTOP</a>
+                <a href="{{ route('schoolarship.trainingcenter') }}" class="block px-10 py-3 hover:bg-blue-800">Training Centers</a>
+                <a href="" class="block px-10 py-3 hover:bg-blue-800">Assessment & Certification</a>
+                
+                <a href="{{ route('schoolarship.tesda-online') }}" class="block px-10 py-3 hover:bg-blue-800">TESDA Online Program</a>
 
             </div>
 
