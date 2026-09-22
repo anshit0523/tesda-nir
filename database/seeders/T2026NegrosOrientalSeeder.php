@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -14,13 +13,14 @@ class T2026NegrosOrientalSeeder extends Seeder
     public function run(): void
     {
         $rows = [
+            // Row 1
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0010',
+                'unique_institution_identification' => '0746-0010',
                 'name_of_institution' => 'Cuttin\' Loose Beauty Culture (CLBC) Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Maria Luz- Cole Havranek',
@@ -39,23 +39,18 @@ class T2026NegrosOrientalSeeder extends Seeder
                 'program_reg_no' => 'WTR No. MTP-202307HHCHIL208-082',
                 'date_issued' => '2023-12-11 00:00:00',
                 'expiration_date' => '2028-12-12 00:00:00',
-                'trainer' => 'Myra A. Umbac
-Terence L. Havranek
-Stanley Antonio D. Umbac',
-                'nttc' => 'TMC No. 20074601000013
-TMC No. 18074601000234
-TMC No. 19074601000117',
-                'expiration_date_of_nttc' => '5/3/2025
-10/19/2023
-6/7/2024',
+                'trainer' => "Myra A. Umbac\nTerence L. Havranek\nStanley Antonio D. Umbac",
+                'nttc' => "TMC No. 20074601000013\nTMC No. 18074601000234\nTMC No. 19074601000117",
+                'expiration_date_of_nttc' => "2025-05-03\n2023-10-19\n2024-06-07",
             ],
+            // Row 2
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0007',
+                'unique_institution_identification' => '0746-0007',
                 'name_of_institution' => 'People Skills and Management Institute, Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ariel D. Ronato - Chairman of the Board',
@@ -74,26 +69,20 @@ TMC No. 19074601000117',
                 'program_reg_no' => 'WTR No. MTP-202307ICTCCS214-088',
                 'date_issued' => '2024-01-25 00:00:00',
                 'expiration_date' => '2029-01-26 00:00:00',
-                'trainer' => 'Lovely Mae F. Glinogo
-Liezel Y. Macolbacol
-Rolando D. Gadiane, Jr.',
-                'nttc' => 'TMC No. 22074601000082
-TMC No. 19074601000093
-TMC No. 20074601000023',
-                'expiration_date_of_nttc' => '6/12/2027
-3/28/2024
-9/1/2025',
+                'trainer' => "Lovely Mae F. Glinogo\nLiezel Y. Macolbacol\nRolando D. Gadiane, Jr.",
+                'nttc' => "TMC No. 22074601000082\nTMC No. 19074601000093\nTMC No. 20074601000023",
+                'expiration_date_of_nttc' => "2027-06-12\n2024-03-28\n2025-09-01",
             ],
+            // Row 3
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0008',
+                'unique_institution_identification' => '0746-0008',
                 'name_of_institution' => 'Foundation University Inc.',
-                'formerly_name_of_tvi' => '(Vicente and Sofia Sinco Foundation, Inc.) 
-(V.G. Sinco Educational Corporation)',
+                'formerly_name_of_tvi' => "(Vicente and Sofia Sinco Foundation, Inc.)\n(V.G. Sinco Educational Corporation)",
                 'name_of_institution_s_head' => 'Vicente G. Sinco - President',
                 'address' => 'Dr. Miciano Raod, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.306198793,
@@ -110,22 +99,20 @@ TMC No. 20074601000023',
                 'program_reg_no' => 'WTR No. MTP-202307TRSBPP209-099',
                 'date_issued' => '2024-01-26 00:00:00',
                 'expiration_date' => '2029-01-29 00:00:00',
-                'trainer' => 'Antonio T. Bendal, Jr.
-Jorie May J. Barraquias
-Meraflor T. Ventero',
+                'trainer' => "Antonio T. Bendal, Jr.\nJorie May J. Barraquias\nMeraflor T. Ventero",
                 'nttc' => 'NTTC No. 211707221200170',
-                'expiration_date_of_nttc' => '10/03/2026',
+                'expiration_date_of_nttc' => '2026-10-03',
             ],
+            // Row 4
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0008',
+                'unique_institution_identification' => '0746-0008',
                 'name_of_institution' => 'Foundation University Inc.',
-                'formerly_name_of_tvi' => '(Vicente and Sofia Sinco Foundation, Inc.) 
-(V.G. Sinco Educational Corporation)',
+                'formerly_name_of_tvi' => "(Vicente and Sofia Sinco Foundation, Inc.)\n(V.G. Sinco Educational Corporation)",
                 'name_of_institution_s_head' => 'Vicente G. Sinco - President',
                 'address' => 'Dr. Miciano Raod, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.306198793,
@@ -144,18 +131,18 @@ Meraflor T. Ventero',
                 'expiration_date' => '2028-04-21 00:00:00',
                 'trainer' => 'Richie B. Bungart',
                 'nttc' => 'NTTC No. 232307461300112',
-                'expiration_date_of_nttc' => '25/01/2028',
+                'expiration_date_of_nttc' => '2028-01-25',
             ],
+            // Row 5
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0008',
+                'unique_institution_identification' => '0746-0008',
                 'name_of_institution' => 'Foundation University Inc.',
-                'formerly_name_of_tvi' => '(Vicente and Sofia Sinco Foundation, Inc.) 
-(V.G. Sinco Educational Corporation)',
+                'formerly_name_of_tvi' => "(Vicente and Sofia Sinco Foundation, Inc.)\n(V.G. Sinco Educational Corporation)",
                 'name_of_institution_s_head' => 'Vicente G. Sinco - President',
                 'address' => 'Dr. Miciano Raod, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.306198793,
@@ -172,18 +159,18 @@ Meraflor T. Ventero',
                 'program_reg_no' => 'WTR No. MTP-202307TRSCOK214-101',
                 'date_issued' => '2024-01-26 00:00:00',
                 'expiration_date' => '2029-01-29 00:00:00',
-                'trainer' => 'Antonio T. Bendal, Jr.
-Jorie May J. Barraquias',
+                'trainer' => "Antonio T. Bendal, Jr.\nJorie May J. Barraquias",
                 'nttc' => 'NTTC No. 191907461200367',
-                'expiration_date_of_nttc' => '17/07/2024',
+                'expiration_date_of_nttc' => '2024-07-17',
             ],
+            // Row 6
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -204,15 +191,16 @@ Jorie May J. Barraquias',
                 'expiration_date' => '2027-09-07 00:00:00',
                 'trainer' => 'Elvin Y. Baguio',
                 'nttc' => 'NTTC No. 191907461200292',
-                'expiration_date_of_nttc' => '13/06/2024',
+                'expiration_date_of_nttc' => '2024-06-13',
             ],
+            // Row 7
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0031',
+                'unique_institution_identification' => '0746-0031',
                 'name_of_institution' => 'Global Tech Manpower Institute Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Eduardo P. Mondarte - Administrator',
@@ -231,38 +219,18 @@ Jorie May J. Barraquias',
                 'program_reg_no' => 'WTR No. MTP-202307MEEEAW103-113',
                 'date_issued' => '2024-05-31 00:00:00',
                 'expiration_date' => '2029-06-01 00:00:00',
-                'trainer' => 'Imelda R. Ubag
-Eduardo P. Mondarte
-Isagani B. Abril
-Jungie A. Helardes
-Germano A. Jabanes
-Edgardo A. Zamora
-Josie Wen A. Lejarso
-Jimmy L. Oyangorin',
-                'nttc' => 'NTTC No. 221707461200070
-NTTC No. 221807461200547
-NTTC No. 221807461200422
-NTTC No. 201907461200300
-NTTC No. 221807461200424
-NTTC No. 212107461200073
-NTTC No. 221807461200453
-NTTC No. 232207461200047',
-                'expiration_date_of_nttc' => '11/4/2026
-10/11/2027
-8/4/2027
-12/15/2024
-3/30/2027
-3/4/2024
-1/27/2025
-1/30/2028',
+                'trainer' => "Imelda R. Ubag\nEduardo P. Mondarte\nIsagani B. Abril\nJungie A. Helardes\nGermano A. Jabanes\nEdgardo A. Zamora\nJosie Wen A. Lejarso\nJimmy L. Oyangorin",
+                'nttc' => "NTTC No. 221707461200070\nNTTC No. 221807461200547\nNTTC No. 221807461200422\nNTTC No. 201907461200300\nNTTC No. 221807461200424\nNTTC No. 212107461200073\nNTTC No. 221807461200453\nNTTC No. 232207461200047",
+                'expiration_date_of_nttc' => "2026-11-04\n2027-10-11\n2027-08-04\n2024-12-15\n2027-03-30\n2024-03-04\n2025-01-27\n2028-01-30",
             ],
+            // Row 8
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0031',
+                'unique_institution_identification' => '0746-0031',
                 'name_of_institution' => 'Global Tech Manpower Institute Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Eduardo P. Mondarte - Administrator',
@@ -281,49 +249,26 @@ NTTC No. 232207461200047',
                 'program_reg_no' => 'WTR No. MTP-202307MEEEAW206-114',
                 'date_issued' => '2024-05-31 00:00:00',
                 'expiration_date' => '2029-06-01 00:00:00',
-                'trainer' => 'Imelda R. Ubag
-Eduardo P. Mondarte
-Isagani B. Abril
-Jungie A. Helardes
-Germano A. Jabanes
-Edgardo A. Zamora
-Josie Wen A. Lejarso
-Jimmy L. Oyangorin',
-                'nttc' => 'NTTC No. 221707461200070
-NTTC No. 221807461200547
-NTTC No. 221807461200422
-NTTC No. 201907461200300
-NTTC No. 221807461200424
-NTTC No. 212107461200073
-NTTC No. 221807461200453
-NTTC No. 232207461200047',
-                'expiration_date_of_nttc' => '11/4/2026
-10/11/2027
-8/4/2027
-12/15/2024
-3/30/2027
-3/4/2024
-1/27/2025
-1/30/2028',
+                'trainer' => "Imelda R. Ubag\nEduardo P. Mondarte\nIsagani B. Abril\nJungie A. Helardes\nGermano A. Jabanes\nEdgardo A. Zamora\nJosie Wen A. Lejarso\nJimmy L. Oyangorin",
+                'nttc' => "NTTC No. 221707461200070\nNTTC No. 221807461200547\nNTTC No. 221807461200422\nNTTC No. 201907461200300\nNTTC No. 221807461200424\nNTTC No. 212107461200073\nNTTC No. 221807461200453\nNTTC No. 232207461200047",
+                'expiration_date_of_nttc' => "2026-11-04\n2027-10-11\n2027-08-04\n2024-12-15\n2027-03-30\n2024-03-04\n2025-01-27\n2028-01-30",
             ],
+            // Row 9
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
-                'formerly_name_of_tvi' => '"(Formerly:
-Teamskills School for Culinary Arts and Hopitality Management, Inc."',
+                'formerly_name_of_tvi' => "(Formerly: Teamskills School for Culinary Arts and Hopitality Management, Inc.)",
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30910084,
                 'longitude_point' => 123.2911675,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
@@ -334,40 +279,26 @@ teamskills.acenter@gmail.com',
                 'program_reg_no' => 'WTR No. MTP-202307TRSBPP209-115',
                 'date_issued' => '2024-01-18 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Mishelle S. Chiong
-Tina M. Ronato
-Ariel D. Ronato
-Nancy L. Acabodillo
-Crecenciana V. Batalan
-Ligaya A. Morales
-Alex A. Pagohinog, Jr.
-Cira Chel G. Kinkito
-Ronalyn G. Turno
-Eva A. Quiapo
-Chona V. Morales',
-                'nttc' => 'NTTC No. 222207461200161
-NTTC No. 222207461200163',
-                'expiration_date_of_nttc' => '1/26/2027
-2/2/2027',
+                'trainer' => "Mishelle S. Chiong\nTina M. Ronato\nAriel D. Ronato\nNancy L. Acabodillo\nCrecenciana V. Batalan\nLigaya A. Morales\nAlex A. Pagohinog, Jr.\nCira Chel G. Kinkito\nRonalyn G. Turno\nEva A. Quiapo\nChona V. Morales",
+                'nttc' => "NTTC No. 222207461200161\nNTTC No. 222207461200163",
+                'expiration_date_of_nttc' => "2027-01-26\n2027-02-02",
             ],
+            // Row 10
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
-                'formerly_name_of_tvi' => '"(Formerly:
-Teamskills School for Culinary Arts and Hopitality Management, Inc."',
+                'formerly_name_of_tvi' => "(Formerly: Teamskills School for Culinary Arts and Hopitality Management, Inc.)",
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30910084,
                 'longitude_point' => 123.2911675,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
@@ -378,36 +309,26 @@ teamskills.acenter@gmail.com',
                 'program_reg_no' => 'WTR No. MTP-202307TRSCOK214-116',
                 'date_issued' => '2024-01-18 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Alex A. Padohinog, Jr.
-Mishelle S. Chiong
-Ligaya A. Morales
-Crecenciana V. Batalan
-Nancy L. Acabodillo
- Tina M. Ronato
-Ariel D. Ronato
-Chona V. Morales
-Jonelle Frias',
+                'trainer' => "Alex A. Padohinog, Jr.\nMishelle S. Chiong\nLigaya A. Morales\nCrecenciana V. Batalan\nNancy L. Acabodillo\nTina M. Ronato\nAriel D. Ronato\nChona V. Morales\nJonelle Frias",
                 'nttc' => 'Not indicated',
                 'expiration_date_of_nttc' => 'Not indicated',
             ],
+            // Row 11
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
-                'formerly_name_of_tvi' => '"(Formerly:
-Teamskills School for Culinary Arts and Hopitality Management, Inc."',
+                'formerly_name_of_tvi' => "(Formerly: Teamskills School for Culinary Arts and Hopitality Management, Inc.)",
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30910084,
                 'longitude_point' => 123.2911675,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
@@ -418,30 +339,26 @@ teamskills.acenter@gmail.com',
                 'program_reg_no' => 'WTR No. MTP-202307TRSHSK213-117',
                 'date_issued' => '2024-01-18 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Estella P. Maraña
-Ariel D. Ronato',
-                'nttc' => 'NTTC No.: 221707461200009
-NTTC No.: 201907461200241',
+                'trainer' => "Estella P. Maraña\nAriel D. Ronato",
+                'nttc' => "NTTC No.: 221707461200009\nNTTC No.: 201907461200241",
                 'expiration_date_of_nttc' => null,
             ],
+            // Row 12
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
-                'formerly_name_of_tvi' => '"(Formerly:
-Teamskills School for Culinary Arts and Hopitality Management, Inc."',
+                'formerly_name_of_tvi' => "(Formerly: Teamskills School for Culinary Arts and Hopitality Management, Inc.)",
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30910084,
                 'longitude_point' => 123.2911675,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
@@ -452,18 +369,18 @@ teamskills.acenter@gmail.com',
                 'program_reg_no' => 'WTR NO. MTP-202307TRSTPS215-118',
                 'date_issued' => '2024-01-18 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Ariel D. Ronato
-Fiona J. Lao',
+                'trainer' => "Ariel D. Ronato\nFiona J. Lao",
                 'nttc' => 'Not indicated',
                 'expiration_date_of_nttc' => 'Not indicated',
             ],
+            // Row 13
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0022',
+                'unique_institution_identification' => '0746-0022',
                 'name_of_institution' => 'Metro Dumaguete College Inc.',
                 'formerly_name_of_tvi' => '(Formerly: FOUR WD COMPUTER TRAINING CENTER, INC.)',
                 'name_of_institution_s_head' => 'Dr. Delma P. Manila, DPA, CESO V / President',
@@ -482,32 +399,18 @@ Fiona J. Lao',
                 'program_reg_no' => 'WTR No. MTP-202307ELCCSS213-109',
                 'date_issued' => '2023-07-25 00:00:00',
                 'expiration_date' => '2028-07-25 00:00:00',
-                'trainer' => 'Margielen P. Alcoreza
-Ricky L. Baldado
-Edlyn P. Casal
-Lindon A. Damaso
-April Joy D. Palahang
-Roland R. Palallos',
-                'nttc' => 'NTTC No. 202007461200222
-NTTC No. 211707461200365
-NTTC No. 191807461200313
-NTTC No. 201707461200203
-NTTC No. 201907461200221
-NTTC No. 201707461200162',
-                'expiration_date_of_nttc' => '6/24/2025
-9/27/2026
-6/19/2024
-5/21/2025
-5/28/202\\5
-2/20/2025',
+                'trainer' => "Margielen P. Alcoreza\nRicky L. Baldado\nEdlyn P. Casal\nLindon A. Damaso\nApril Joy D. Palahang\nRoland R. Palallos",
+                'nttc' => "NTTC No. 202007461200222\nNTTC No. 211707461200365\nNTTC No. 191807461200313\nNTTC No. 201707461200203\nNTTC No. 201907461200221\nNTTC No. 201707461200162",
+                'expiration_date_of_nttc' => "2025-06-24\n2026-09-27\n2024-06-19\n2025-05-21\n2025-05-28\n2025-02-20",
             ],
+            // Row 14
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -526,29 +429,18 @@ NTTC No. 201707461200162',
                 'program_reg_no' => 'WTR No. MTP-202307ALTDRV204-127',
                 'date_issued' => '2024-04-03 00:00:00',
                 'expiration_date' => '2029-04-04 00:00:00',
-                'trainer' => 'Elvin Y. Baguio
-Jerome A. Zamora
-Roskie A. Gabutero
-Rey Jay E. Jacosalem
-Edlyn P. Casal',
-                'nttc' => 'NTTC No. 211907461200430
-NTTC No. 212007461200057
-NTTC No. 211907221200358
-NTTC No. 211907461200276
-NTTC No. 211807461200321',
-                'expiration_date_of_nttc' => '10/19/2026
-12/17/2025
-09/20/2026
-6/09/2026
-11/26/2024',
+                'trainer' => "Elvin Y. Baguio\nJerome A. Zamora\nRoskie A. Gabutero\nRey Jay E. Jacosalem\nEdlyn P. Casal",
+                'nttc' => "NTTC No. 211907461200430\nNTTC No. 212007461200057\nNTTC No. 211907221200358\nNTTC No. 211907461200276\nNTTC No. 211807461200321",
+                'expiration_date_of_nttc' => "2026-10-19\n2025-12-17\n2026-09-20\n2026-06-09\n2024-11-26",
             ],
+            // Row 15
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -569,15 +461,16 @@ NTTC No. 211807461200321',
                 'expiration_date' => '2027-09-07 00:00:00',
                 'trainer' => 'Elvin Y. Baguio',
                 'nttc' => 'NTTC No. 191907461200291',
-                'expiration_date_of_nttc' => '13/06/2024',
+                'expiration_date_of_nttc' => '2024-06-13',
             ],
+            // Row 16
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -598,15 +491,16 @@ NTTC No. 211807461200321',
                 'expiration_date' => '2027-09-07 00:00:00',
                 'trainer' => 'Elvin Y. Baguio',
                 'nttc' => 'NTTC No. 191907461200293',
-                'expiration_date_of_nttc' => '06/13/2024',
+                'expiration_date_of_nttc' => '2024-06-13',
             ],
+            // Row 17
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -625,29 +519,18 @@ NTTC No. 211807461200321',
                 'program_reg_no' => 'WTR No. MTP-202307AFFAGE217-148',
                 'date_issued' => '2024-04-03 00:00:00',
                 'expiration_date' => '2029-04-04 00:00:00',
-                'trainer' => 'Beth Aimee D. Tubog
-Emmalyn B. Carreon
-Ma. Evelyn A. Tuisa
-Gladys T. Deleña
-Roberto P. Silva',
-                'nttc' => 'NTTC No. 191807461200412
-NTTC No. 221707461200239
-PTTC No. 2207460200005
-PTTC No. 2207460200006
-PTTC No. 2207460200011',
-                'expiration_date_of_nttc' => '9/12/2024
-10/15/2026
-6/23/2024
-6/23/2024
-9/26/2024',
+                'trainer' => "Beth Aimee D. Tubog\nEmmalyn B. Carreon\nMa. Evelyn A. Tuisa\nGladys T. Deleña\nRoberto P. Silva",
+                'nttc' => "NTTC No. 191807461200412\nNTTC No. 221707461200239\nPTTC No. 2207460200005\nPTTC No. 2207460200006\nPTTC No. 2207460200011",
+                'expiration_date_of_nttc' => "2024-09-12\n2026-10-15\n2024-06-23\n2024-06-23\n2024-09-26",
             ],
+            // Row 18
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0011',
+                'unique_institution_identification' => '0746-0011',
                 'name_of_institution' => 'Sto. Niño Skills Training & Assessment Center Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Joel S. Vidal / President',
@@ -668,15 +551,16 @@ PTTC No. 2207460200011',
                 'expiration_date' => '2028-08-10 00:00:00',
                 'trainer' => 'Richie B. Bungart',
                 'nttc' => 'NTTC No. 232307461300112',
-                'expiration_date_of_nttc' => '25/01/2025',
+                'expiration_date_of_nttc' => '2025-01-25',
             ],
+            // Row 19
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0011',
+                'unique_institution_identification' => '0746-0011',
                 'name_of_institution' => 'Sto. Niño Skills Training & Assessment Center Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Joel S. Vidal II / President',
@@ -697,15 +581,16 @@ PTTC No. 2207460200011',
                 'expiration_date' => '2028-08-10 00:00:00',
                 'trainer' => 'Jerome A. Zamora',
                 'nttc' => 'NTTC No. 212007461200057',
-                'expiration_date_of_nttc' => '17/12/2025',
+                'expiration_date_of_nttc' => '2025-12-17',
             ],
+            // Row 20
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0009',
+                'unique_institution_identification' => '0746-0009',
                 'name_of_institution' => 'Silliman University',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Betty Cernol-McCann, Ph.D., Rpsy, CSSP / President',
@@ -724,17 +609,18 @@ PTTC No. 2207460200011',
                 'program_reg_no' => 'WTR No. MTP-202407AFFAPP213-020',
                 'date_issued' => '2024-03-22 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'John  Albert Branzuela Ungson',
+                'trainer' => 'John Albert Branzuela Ungson',
                 'nttc' => 'NTTC No. 241907461200079',
-                'expiration_date_of_nttc' => '17/12/2028',
+                'expiration_date_of_nttc' => '2028-12-17',
             ],
+            // Row 21
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0009',
+                'unique_institution_identification' => '0746-0009',
                 'name_of_institution' => 'Silliman University',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Betty Cernol-McCann, Ph.D., Rpsy, CSSP / President',
@@ -755,15 +641,16 @@ PTTC No. 2207460200011',
                 'expiration_date' => '2029-01-19 00:00:00',
                 'trainer' => 'Justin Philip Ginggoyon Valencia',
                 'nttc' => 'NTTC No. 231907461200508',
-                'expiration_date_of_nttc' => '31/08/2028',
+                'expiration_date_of_nttc' => '2028-08-31',
             ],
+            // Row 22
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0009',
+                'unique_institution_identification' => '0746-0009',
                 'name_of_institution' => 'Silliman University',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Betty Cernol-McCann, Ph.D., Rpsy, CSSP / President',
@@ -784,23 +671,23 @@ PTTC No. 2207460200011',
                 'expiration_date' => '2028-08-03 00:00:00',
                 'trainer' => 'Dorcas S. Panangganan',
                 'nttc' => 'NTTC No. 211707461200460',
-                'expiration_date_of_nttc' => '08/11/2026',
+                'expiration_date_of_nttc' => '2026-08-11',
             ],
+            // Row 23
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '1st',
                 'municipality' => 'Guihulngan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0016',
+                'unique_institution_identification' => '0746-0016',
                 'name_of_institution' => 'ZN Global Knowledge and Skills, Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesamyl D. Velasco - President',
                 'address' => 'S. Villegas St., Poblacion, Guihulngan City, Negros Oriental',
                 'latitude_point' => 10.11793882,
                 'longitude_point' => 123.2696412,
-                'tel_no' => '09971879449 / 
- 09198985063',
+                'tel_no' => "09971879449 /\n09198985063",
                 'e_mail_address' => 'znglobal.guihulngan@gmail.com',
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
@@ -814,62 +701,53 @@ PTTC No. 2207460200011',
                 'expiration_date' => '2029-02-16 00:00:00',
                 'trainer' => 'Rodelo T. Cabilin',
                 'nttc' => 'NTTC No. 201909721200116',
-                'expiration_date_of_nttc' => '02/03/2025',
+                'expiration_date_of_nttc' => '2025-02-03',
             ],
+            // Row 24
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
                 'formerly_name_of_tvi' => '(Formerly: Teamskills School for Culinary Arts and Hospitality Management, Inc.)',
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.314098122,
                 'longitude_point' => 123.3034628,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
                 'sector' => 'Tourism',
                 'course_registered_program' => 'Barista NC II - Mobile Training Program',
-                'pgf_level' => null,
+                'pgf_level' => 'NC II',
                 'duration' => '178 Hours',
                 'program_reg_no' => 'WTR No. MTP-202407TRSBRT213-029',
                 'date_issued' => '2024-06-06 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Ariel C. Ronato
-Tina M. Ronato
-Elrey Elmoore C. Abella
-Angelo S. Salvoro',
-                'nttc' => 'NTTC No. 221907461200032
-NTTC No. 222207461200165
-NTTC No. 232107461200262
-NTTC No. 232307461200554',
-                'expiration_date_of_nttc' => '1/9/2027
-2/2/2027
-9/25/2027
-6/4/2028',
+                'trainer' => "Ariel C. Ronato\nTina M. Ronato\nElrey Elmoore C. Abella\nAngelo S. Salvoro",
+                'nttc' => "NTTC No. 221907461200032\nNTTC No. 222207461200165\nNTTC No. 232107461200262\nNTTC No. 232307461200554",
+                'expiration_date_of_nttc' => "2027-01-09\n2027-02-02\n2027-09-25\n2028-06-04",
             ],
+            // Row 25
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
-                'congressional_district' => '1st',
+                'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0030',
+                'unique_institution_identification' => '0746-0030',
                 'name_of_institution' => 'Philippine Call Center Institute Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Kristelle Lynne P. Ong, Center Manager',
                 'address' => '2/F, Doña Milagros Bldg., Sta. Rosa St., Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30403785,
                 'longitude_point' => 123.3078172,
-                'tel_no' => '035-4210834, 09362125218, \'09088123684',
+                'tel_no' => '035-4210834, 09362125218, 09088123684',
                 'e_mail_address' => 'kristelleong@yahoo.com',
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
@@ -881,22 +759,48 @@ NTTC No. 232307461200554',
                 'program_reg_no' => 'WTR No. MTP-202407ICTCCS214-045',
                 'date_issued' => '2024-10-24 00:00:00',
                 'expiration_date' => '2029-03-18 00:00:00',
-                'trainer' => 'Jelo R. Silvano
-Ludy Mae G. Bulahan
-Luchie B. Stemper, 
-Buena Asuncion D. San Marte, 
-Doinita C. Bensing,
-Adell T. Pacudan',
+                'trainer' => "Jelo R. Silvano\nLudy Mae G. Bulahan\nLuchie B. Stemper,\nBuena Asuncion D. San Marte,\nDoinita C. Bensing,\nAdell T. Pacudan",
                 'nttc' => 'Not indicated',
                 'expiration_date_of_nttc' => 'Not indicated',
             ],
+            // Row 26
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0022',
+                'unique_institution_identification' => '0746-0022',
+                'name_of_institution' => 'Metro Dumaguete College Inc.',
+                'formerly_name_of_tvi' => '(Formerly: FOUR WD COMPUTER TRAINING CENTER, INC.)',
+                'name_of_institution_s_head' => 'Dr. Delma P. Manila, DPA, CESO V / President',
+                'address' => 'E.J. Blanco Drive Extension, Brgy. Daro, Dumaguete City, Negros Oriental',
+                'latitude_point' => 9.31933516,
+                'longitude_point' => 123.2912191,
+                'tel_no' => '(035) 4229728 / 2259170 / 4226341 / 4224605 / 09177008455',
+                'e_mail_address' => 'mdctechvoc@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR-MTP',
+                'sector' => 'Tourism',
+                'course_registered_program' => 'Bread and Pastry Production NC II - Mobile Training Program',
+                'pgf_level' => 'NC II',
+                'duration' => '141 Hours',
+                'program_reg_no' => 'WTR No. MTP-202407TRSBPP209-048',
+                'date_issued' => '2024-11-19 00:00:00',
+                'expiration_date' => '2029-01-19 00:00:00',
+                'trainer' => 'Margielen P. Alcoreza',
+                'nttc' => 'NTTC No. 202007461200343',
+                'expiration_date_of_nttc' => '2025-06-24',
+            ],
+            // Row 27
+            [
+                'region' => 'VII',
+                'province' => 'Negros Oriental',
+                'congressional_district' => '2nd',
+                'municipality' => 'Dumaguete City',
+                'municipality_class' => 'Component',
+                'unique_institution_identification' => '0746-0022',
                 'name_of_institution' => 'Metro Dumaguete College Inc.',
                 'formerly_name_of_tvi' => '(Formerly: FOUR WD COMPUTER TRAINING CENTER, INC.)',
                 'name_of_institution_s_head' => 'Dr. Delma P. Manila, DPA, CESO V / President',
@@ -915,23 +819,18 @@ Adell T. Pacudan',
                 'program_reg_no' => 'WTR No. MTP-202407TVETRM111-049',
                 'date_issued' => '2024-11-19 00:00:00',
                 'expiration_date' => '2028-08-02 00:00:00',
-                'trainer' => 'Margielen P. Alcoreza
-Emmalyn B. Carreon
-Edlyn P. Casal',
-                'nttc' => 'TMC No. 20074601000019
-TMC No. 23074601000012
-TMC No. 23074601012100',
-                'expiration_date_of_nttc' => '7/1/2025
-2/19/2028
-6/1/2028',
+                'trainer' => "Margielen P. Alcoreza\nEmmalyn B. Carreon\nEdlyn P. Casal",
+                'nttc' => "TMC No. 20074601000019\nTMC No. 23074601000012\nTMC No. 23074601012100",
+                'expiration_date_of_nttc' => "2025-07-01\n2028-02-19\n2028-06-01",
             ],
+            // Row 28
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0022',
+                'unique_institution_identification' => '0746-0022',
                 'name_of_institution' => 'Metro Dumaguete College Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Dr. Delma P. Manila, DPA, CESO V / President',
@@ -945,28 +844,23 @@ TMC No. 23074601012100',
                 'status' => 'WTR-MTP',
                 'sector' => 'Tourism',
                 'course_registered_program' => 'Bread and Pastry Production NC II - Mobile Training Program',
-                'pgf_level' => 'NC I',
+                'pgf_level' => 'NC II',
                 'duration' => '141 Hours',
                 'program_reg_no' => 'WTR No. MTP-202407TRSBPP209-050',
                 'date_issued' => '2024-11-27 00:00:00',
                 'expiration_date' => '2029-01-19 00:00:00',
-                'trainer' => 'Margielen P. Alcoreza 
-Baby Jean S. Baligasa 
-Gina A. Ronidna',
-                'nttc' => 'NTTC No. 202007461200343
-NTTC No. 221807461200501
-NTTC No. 221707461200014',
-                'expiration_date_of_nttc' => '6/24/2025
-10/6/2027
-5/30/2026',
+                'trainer' => "Margielen P. Alcoreza\nBaby Jean S. Baligasa\nGina A. Ronidna",
+                'nttc' => "NTTC No. 202007461200343\nNTTC No. 221807461200501\nNTTC No. 221707461200014",
+                'expiration_date_of_nttc' => "2025-06-24\n2027-10-06\n2026-05-30",
             ],
+            // Row 29
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0022',
+                'unique_institution_identification' => '0746-0022',
                 'name_of_institution' => 'Metro Dumaguete College Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Dr. Delma P. Manila, DPA, CESO V / President',
@@ -987,15 +881,16 @@ NTTC No. 221707461200014',
                 'expiration_date' => '2029-05-27 00:00:00',
                 'trainer' => 'Delma P. Manila',
                 'nttc' => 'NTTC No. 242207461300083',
-                'expiration_date_of_nttc' => '06/06/2028',
+                'expiration_date_of_nttc' => '2028-06-06',
             ],
+            // Row 30
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0013',
+                'unique_institution_identification' => '0746-0013',
                 'name_of_institution' => 'Provincial Training Center - Dumaguete',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Jesila A. Ocariza - Center Administrator',
@@ -1014,23 +909,18 @@ NTTC No. 221707461200014',
                 'program_reg_no' => 'WTR No. MTP-202407TVETRM111-052',
                 'date_issued' => '2024-12-02 00:00:00',
                 'expiration_date' => '2027-09-07 00:00:00',
-                'trainer' => 'Margielen P. Alcoreza
-Emmalyn B. Carreon
-Edlyn P. Casal',
-                'nttc' => 'TMC No. 20074601000019
-TMC No. 23074601000012
-TMC No. 23074601012100',
-                'expiration_date_of_nttc' => '6/24/2025
-2/19/2028
-6/1/2028',
+                'trainer' => "Margielen P. Alcoreza\nEmmalyn B. Carreon\nEdlyn P. Casal",
+                'nttc' => "TMC No. 20074601000019\nTMC No. 23074601000012\nTMC No. 23074601012100",
+                'expiration_date_of_nttc' => "2025-06-24\n2028-02-19\n2028-06-01",
             ],
+            // Row 31
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0011',
+                'unique_institution_identification' => '0746-0011',
                 'name_of_institution' => 'Sto. Niño Skills Training & Assessment Center Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Annabelle C. Vidal, School Administrator',
@@ -1051,15 +941,16 @@ TMC No. 23074601012100',
                 'expiration_date' => '2028-08-10 00:00:00',
                 'trainer' => 'Jurez Lilybeth Z. Fernandez',
                 'nttc' => 'NTTC No. 242207461200717',
-                'expiration_date_of_nttc' => '28/02/2029',
+                'expiration_date_of_nttc' => '2029-02-28',
             ],
+            // Row 32
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '1st',
                 'municipality' => 'Guihulngan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0004',
+                'unique_institution_identification' => '0746-0004',
                 'name_of_institution' => 'Guihulngan Satellite Skills Development Center',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Roberto T. Bustamante, Executive Director',
@@ -1080,15 +971,16 @@ TMC No. 23074601012100',
                 'expiration_date' => '2029-02-28 00:00:00',
                 'trainer' => 'Michelle S. Montemayor',
                 'nttc' => 'NTTC No. 221807461200480',
-                'expiration_date_of_nttc' => '02/09/2027',
+                'expiration_date_of_nttc' => '2027-02-09',
             ],
+            // Row 33
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bais City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0035',
+                'unique_institution_identification' => '0746-0035',
                 'name_of_institution' => 'Rams Art Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ramon E. Calumpang',
@@ -1107,20 +999,18 @@ TMC No. 23074601012100',
                 'program_reg_no' => 'WTR No. MTP-2025-07-46-TRSBPP209-027',
                 'date_issued' => '2025-09-29 00:00:00',
                 'expiration_date' => '2029-03-18 00:00:00',
-                'trainer' => 'Agnes M. Niere
-Judelyn P. Rebutazo',
-                'nttc' => 'NTTC No. 232307461200334
-NTTC No. 252407461200078',
-                'expiration_date_of_nttc' => 'May 25, 2028
-March 12, 2029',
+                'trainer' => "Agnes M. Niere\nJudelyn P. Rebutazo",
+                'nttc' => "NTTC No. 232307461200334\nNTTC No. 252407461200078",
+                'expiration_date_of_nttc' => "2028-05-25\n2029-03-12",
             ],
+            // Row 34
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bais City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0035',
+                'unique_institution_identification' => '0746-0035',
                 'name_of_institution' => 'Rams Art Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ramon E. Calumpang',
@@ -1141,15 +1031,16 @@ March 12, 2029',
                 'expiration_date' => '2029-11-16 00:00:00',
                 'trainer' => 'Joan A. Amposta',
                 'nttc' => 'NTTC No. 242407461300637',
-                'expiration_date_of_nttc' => 'July 27, 2029',
+                'expiration_date_of_nttc' => '2029-07-27',
             ],
+            // Row 35
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bais City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0035',
+                'unique_institution_identification' => '0746-0035',
                 'name_of_institution' => 'Rams Art Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ramon E. Calumpang',
@@ -1168,20 +1059,18 @@ March 12, 2029',
                 'program_reg_no' => 'WTR No. MTP-2025-07-46-ELCEIM215-029',
                 'date_issued' => '2025-09-29 00:00:00',
                 'expiration_date' => '2029-09-26 00:00:00',
-                'trainer' => 'Francis E. Cadallo
-Ramon E. Calumpang',
-                'nttc' => 'NTTC No. 242107461200311
-NTTC No. 232307461200265',
-                'expiration_date_of_nttc' => 'March 19, 2029
-December 2, 2027',
+                'trainer' => "Francis E. Cadallo\nRamon E. Calumpang",
+                'nttc' => "NTTC No. 242107461200311\nNTTC No. 232307461200265",
+                'expiration_date_of_nttc' => "2029-03-19\n2027-12-02",
             ],
+            // Row 36
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => 'Not Found',
+                'unique_institution_identification' => 'Not Found',
                 'name_of_institution' => 'Integrated Development Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Elma C. Tanasan, President',
@@ -1202,15 +1091,16 @@ December 2, 2027',
                 'expiration_date' => '2029-12-14 00:00:00',
                 'trainer' => 'Kenneth John Baliquig',
                 'nttc' => 'NTTC No. 242407461200405',
-                'expiration_date_of_nttc' => '30-May-29',
+                'expiration_date_of_nttc' => '2029-05-30',
             ],
+            // Row 37
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => 'Not Found',
+                'unique_institution_identification' => 'Not Found',
                 'name_of_institution' => 'Integrated Development Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Elma C. Tanasan, President',
@@ -1231,15 +1121,16 @@ December 2, 2027',
                 'expiration_date' => '2029-12-14 00:00:00',
                 'trainer' => 'Kenneth John Baliquig',
                 'nttc' => 'NTTC No. 242407461300402',
-                'expiration_date_of_nttc' => '11-Mar-27',
+                'expiration_date_of_nttc' => '2027-03-11',
             ],
+            // Row 38
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => 'Not Found',
+                'unique_institution_identification' => 'Not Found',
                 'name_of_institution' => 'Integrated Development Training and Assessment Center Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Elma C. Tanasan, President',
@@ -1260,15 +1151,16 @@ December 2, 2027',
                 'expiration_date' => '2029-12-14 00:00:00',
                 'trainer' => 'Kenneth John Baliquig',
                 'nttc' => 'NTTC No. 242407461200403',
-                'expiration_date_of_nttc' => '02-Sep-27',
+                'expiration_date_of_nttc' => '2027-09-02',
             ],
+            // Row 39
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '3rd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0002',
+                'unique_institution_identification' => '0746-0002',
                 'name_of_institution' => 'Southern Tech College Foundation Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ion Joseph T. Bollos, MSEM - President',
@@ -1289,15 +1181,16 @@ December 2, 2027',
                 'expiration_date' => '2028-12-12 00:00:00',
                 'trainer' => 'Rosemarie O. Guardiano',
                 'nttc' => 'NTTC No. 231907461300246',
-                'expiration_date_of_nttc' => '12/04/2028',
+                'expiration_date_of_nttc' => '2028-12-04',
             ],
+            // Row 40
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '3rd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0002',
+                'unique_institution_identification' => '0746-0002',
                 'name_of_institution' => 'Southern Tech College Foundation Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Ion Joseph T. Bollos, MSEM - President',
@@ -1318,15 +1211,16 @@ December 2, 2027',
                 'expiration_date' => '2028-12-12 00:00:00',
                 'trainer' => 'Julie Mae J. Librado',
                 'nttc' => 'NTTC No. 242207461200690',
-                'expiration_date_of_nttc' => '29/08/2029',
+                'expiration_date_of_nttc' => '2029-08-29',
             ],
+            // Row 41
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0011',
+                'unique_institution_identification' => '0746-0011',
                 'name_of_institution' => 'Sto. Niño Skills Training & Assessment Center Incorporated',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Annabelle C. Vidal, Administrator',
@@ -1345,34 +1239,26 @@ December 2, 2027',
                 'program_reg_no' => 'WTR No. MTP 2025-07-46-AFFAGE217-041',
                 'date_issued' => '2025-12-10 00:00:00',
                 'expiration_date' => '2025-12-17 00:00:00',
-                'trainer' => 'Richie B. Bungart
-Judith D. Baguio
-Rogir B. Agir',
-                'nttc' => 'NTTC No. 221707461200186
-NTTC No. 242307461200489
-NTTC No. 242007461200627',
-                'expiration_date_of_nttc' => '10/16/2026
-12/22/2028
-8/30/2029',
+                'trainer' => "Richie B. Bungart\nJudith D. Baguio\nRogir B. Agir",
+                'nttc' => "NTTC No. 221707461200186\nNTTC No. 242307461200489\nNTTC No. 242007461200627",
+                'expiration_date_of_nttc' => "2026-10-16\n2028-12-22\n2029-08-30",
             ],
+            // Row 42
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Dumaguete City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0021',
+                'unique_institution_identification' => '0746-0021',
                 'name_of_institution' => 'Teamskills Technological Institute, Inc.',
-                'formerly_name_of_tvi' => '"(Formerly:
-Teamskills School for Culinary Arts and Hopitality Management, Inc."',
+                'formerly_name_of_tvi' => "(Formerly: Teamskills School for Culinary Arts and Hopitality Management, Inc.)",
                 'name_of_institution_s_head' => 'Ariel D. Ronato, D.B.A. - President/CEO',
                 'address' => '3rd Floor, Cecilia Building, Capitol Area, North Road, Daro, Dumaguete City, Negros Oriental',
                 'latitude_point' => 9.30910084,
                 'longitude_point' => 123.2911675,
-                'tel_no' => '(035) 4226159 /
- 09175535507 / 09989788731',
-                'e_mail_address' => 'info@team-skills.com     
-teamskills.acenter@gmail.com',
+                'tel_no' => "(035) 4226159 /\n09175535507 / 09989788731",
+                'e_mail_address' => "info@team-skills.com\nteamskills.acenter@gmail.com",
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
                 'status' => 'WTR-MTP',
@@ -1383,32 +1269,18 @@ teamskills.acenter@gmail.com',
                 'program_reg_no' => 'WTR No. MTP 2025-07-46-TVETRM111-042',
                 'date_issued' => '2025-12-10 00:00:00',
                 'expiration_date' => '2027-10-16 00:00:00',
-                'trainer' => 'Ariel D. Ronato
-Floridel C. Pelin
-Luz L. Borromeo
-Rowell L. Panuncial
-Mark Alexander A. Reposo
-Elrey Elmoore C. Abella',
-                'nttc' => 'TMC25074601000058
-TMC-23071201010768
-TMC-23072201000616
-TMC23072201001009
-TMC-21074601000019
-TMC-21074601000007',
-                'expiration_date_of_nttc' => 'January 8, 2030
-November 20, 2028
-February 21, 2028
-April 11, 2028
-September 20, 2026
-February 10, 2026',
+                'trainer' => "Ariel D. Ronato\nFloridel C. Pelin\nLuz L. Borromeo\nRowell L. Panuncial\nMark Alexander A. Reposo\nElrey Elmoore C. Abella",
+                'nttc' => "TMC25074601000058\nTMC-23071201010768\nTMC-23072201000616\nTMC23072201001009\nTMC-21074601000019\nTMC-21074601000007",
+                'expiration_date_of_nttc' => "2030-01-08\n2028-11-20\n2028-02-21\n2028-04-11\n2026-09-20\n2026-02-10",
             ],
+            // Row 43
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bayawan City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => 'Not Found',
+                'unique_institution_identification' => 'Not Found',
                 'name_of_institution' => 'Armstrong Career and Technical Education Institute Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Larry Neil C. Abalajon, President',
@@ -1427,29 +1299,48 @@ February 10, 2026',
                 'program_reg_no' => 'WTR No. MTP 202507AFFOAP212-052',
                 'date_issued' => '2025-12-26 00:00:00',
                 'expiration_date' => '2029-02-23 00:00:00',
-                'trainer' => 'Greg A. Cadapan
-Allan Eugine Q. Lagradilla
-Michel Padpad
-Francis B. Betchido
-Dereck James M. Requina',
-                'nttc' => 'NTTC No. 231907461200333
-NTTC No. 222007611200151
-NTTC No. 232207461200392
-NTTC No. 221907461200228
-NTTC No. 221807461200551',
-                'expiration_date_of_nttc' => 'June 14, 2028
-February 21, 2027
-April 28, 2028
-March 18, 2027
-September 6, 2027',
+                'trainer' => "Greg A. Cadapan\nAllan Eugine Q. Lagradilla\nMichel Padpad\nFrancis B. Betchido\nDereck James M. Requina",
+                'nttc' => "NTTC No. 231907461200333\nNTTC No. 222007611200151\nNTTC No. 232207461200392\nNTTC No. 221907461200228\nNTTC No. 221807461200551",
+                'expiration_date_of_nttc' => "2028-06-14\n2027-02-21\n2028-04-28\n2027-03-18\n2027-09-06",
             ],
+            // Row 44
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bais City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0012',
+                'unique_institution_identification' => '0746-0012',
+                'name_of_institution' => 'Abellana Technical and Vocational Center, Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Fe L. Abellana, President',
+                'address' => 'Abellana\'s Building, Osmena Street , Brgy. 2 Bais City, Negros Oriental',
+                'latitude_point' => 9.591613909,
+                'longitude_point' => 123.1211719,
+                'tel_no' => '(035) 5313732 / 4023717 / 09351633419',
+                'e_mail_address' => 'abellanastechcenter@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR-MTP',
+                'sector' => 'Human Health/ Health Care',
+                'course_registered_program' => 'Hilot (Wellness Massage) NC II - Mobile Training Program',
+                'pgf_level' => 'NC II',
+                'duration' => '120 Hours',
+                'program_reg_no' => 'WTR No. MTP 202607HHCHIL208-006',
+                'date_issued' => '2026-03-04 00:00:00',
+                'expiration_date' => '2029-04-03 00:00:00',
+                'trainer' => 'Fe L. Abellana',
+                'nttc' => 'NTTC No. 18074601000185',
+                'expiration_date_of_nttc' => '2026-10-24',
+            ],
+            // Row 45
+            [
+                'region' => 'VII',
+                'province' => 'Negros Oriental',
+                'congressional_district' => '2nd',
+                'municipality' => 'Bais City',
+                'municipality_class' => 'Component',
+                'unique_institution_identification' => '0746-0012',
                 'name_of_institution' => 'Abellana Technical and Vocational Center, Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Fe L. Abellana, President',
@@ -1470,15 +1361,16 @@ September 6, 2027',
                 'expiration_date' => '2029-04-03 00:00:00',
                 'trainer' => 'Monica R. Atay',
                 'nttc' => 'NTTC No. 252209721200298',
-                'expiration_date_of_nttc' => '22/06/2030',
+                'expiration_date_of_nttc' => '2030-06-22',
             ],
+            // Row 46
             [
                 'region' => 'VII',
                 'province' => 'Negros Oriental',
                 'congressional_district' => '2nd',
                 'municipality' => 'Bais City',
                 'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0012',
+                'unique_institution_identification' => '0746-0012',
                 'name_of_institution' => 'Abellana Technical and Vocational Center, Inc.',
                 'formerly_name_of_tvi' => null,
                 'name_of_institution_s_head' => 'Fe L. Abellana, President',
@@ -1499,69 +1391,340 @@ September 6, 2027',
                 'expiration_date' => '2029-04-03 00:00:00',
                 'trainer' => 'Ryan Cris M. Alabo',
                 'nttc' => 'NTTC No. 242407461300485',
-                'expiration_date_of_nttc' => '22/12/2028',
+                'expiration_date_of_nttc' => '2028-12-22',
             ],
+
             [
                 'region' => 'VII',
-                'province' => 'Negros Oriental',
-                'congressional_district' => '1st',
-                'municipality' => 'Dumaguete City',
-                'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0019',
-                'name_of_institution' => 'Negor Professional Skills Institute and Assessment Center Inc.',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Siquijor',
+                'municipality_class' => '4th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'Carmelite College of Siquijor, Inc.',
                 'formerly_name_of_tvi' => null,
-                'name_of_institution_s_head' => 'HENRIETTA N. ZERNA - President',
-                'address' => '2nd Floor D&J Building Dr. V. Locsin St. Poblacion No. 4 (Barangay 4) Dumaguete City (Capital), Negros Oriental, Region VII, Philippines, 6200',
-                'latitude_point' => 9.306966843,
-                'longitude_point' => 123.3049508,
-                'tel_no' => '9176400235',
-                'e_mail_address' => null,
+                'name_of_institution_s_head' => 'Sr. Mila Margaret V. Motegrejo',
+                'address' => 'Balasbalas, Cang-Alwang, Tinago, Siquijor, Siquijor',
+                'latitude_point' => 9.213684924,
+                'longitude_point' => 123.4803531,
+                'tel_no' => '035-344-2098 / (035) 542-6276',
+                'e_mail_address' => 'ccsi.official@carmelitecollegesiquijor.com',
                 'type_of_institution' => 'Private',
                 'classification_of_institution' => 'TVI',
-                'status' => 'WTR-MTP',
-                'sector' => 'Human Health/ Health Care',
-                'course_registered_program' => 'Hilot (Wellness Massage) NC II - Mobile Training Program',
+                'status' => 'WTR',
+                'sector' => 'Electrical and Electronics',
+                'course_registered_program' => 'Computer Systems Servicing NC II',
                 'pgf_level' => 'NC II',
-                'duration' => '120 Hours',
-                'program_reg_no' => 'WTR No. MTP 202607HHCHIL208-009',
-                'date_issued' => '2026-03-04 00:00:00',
-                'expiration_date' => '2029-05-23 00:00:00',
-                'trainer' => 'Fred S. Jumawan
-Cristopher P. Labial',
-                'nttc' => 'NTTC No. 231807611200237
-NTTC No. 231906191205093',
-                'expiration_date_of_nttc' => 'April 16, 2028
-July 13, 2028',
+                'duration' => '360 hours',
+                'program_reg_no' => '20220761ELCCSS213092',
+                'date_issued' => '2024-04-19 00:00:00',
+                'expiration_date' => '2029-04-22 00:00:00',
+                'trainer' => 'Kenneth P. Llorente',
+                'nttc' => '1.61408E+14',
+                'expiration_date_of_nttc' => 'Not indicated',
             ],
+            // Row 2
             [
                 'region' => 'VII',
-                'province' => 'Negros Oriental',
-                'congressional_district' => '2nd',
-                'municipality' => 'Dumaguete City',
-                'municipality_class' => 'Component',
-                'unique_instittution_identification' => '0746-0009',
-                'name_of_institution' => 'Silliman University',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Lazi',
+                'municipality_class' => '4th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'PSP Technological Institute Inc.',
                 'formerly_name_of_tvi' => null,
-                'name_of_institution_s_head' => 'Blanchie M. Utzurrum, MPA - Head SU TEVEC',
-                'address' => 'Leopoldo T. Ruiz Administration Hall, Silliman University, Hibbard Avenue, Dumaguete City, Philippines',
-                'latitude_point' => 9.31188509,
-                'longitude_point' => 123.3072783,
-                'tel_no' => '0905-2311-150 / 0917-880-1901',
-                'e_mail_address' => 'administration@su.edu.ph',
+                'name_of_institution_s_head' => 'Pierre S. Pakilit',
+                'address' => 'Pakilit Residence Alvarico Tigbawan (Pob.) Lazi, Siquijor, Region VII, Philippines 6228',
+                'latitude_point' => 9.218691948,
+                'longitude_point' => 123.5189104,
+                'tel_no' => '0965-774-2490',
+                'e_mail_address' => 'psptechnology2019@gmail.com',
                 'type_of_institution' => 'Private',
-                'classification_of_institution' => 'HEI',
-                'status' => 'WTR-MTP',
-                'sector' => 'Social, Community Development and Other Services',
-                'course_registered_program' => 'Early Childhood Care and Development Services NC III - Mobile Training Program',
-                'pgf_level' => 'NC III',
-                'duration' => '298 Hours',
-                'program_reg_no' => 'WTR No. MTP 202607SOCECD325-012',
-                'date_issued' => '2026-04-22 00:00:00',
-                'expiration_date' => '2030-12-27 00:00:00',
-                'trainer' => 'Blanchie M. Utzurrum',
-                'nttc' => 'NTTC No. 252407461300555',
-                'expiration_date_of_nttc' => '07/10/2030',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Automotive and Land Transportation',
+                'course_registered_program' => 'Driving NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '118 hours',
+                'program_reg_no' => '20190761ALTDRV204103',
+                'date_issued' => '2023-12-28 00:00:00',
+                'expiration_date' => '2028-12-29 00:00:00',
+                'trainer' => "Arnold M. Magtahas,\nOrlando J. Gio,\nExcel C. Cabanag",
+                'nttc' => 'NTTC No. 191907611200444 No.181807461200398, No. 191507461200037',
+                'expiration_date_of_nttc' => '08-Oct-23, Aug. 28, 2023, Oct. 16, 2023',
             ],
+            // Row 3
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Lazi',
+                'municipality_class' => '4th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'PSP Technological Institute Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Pierre S. Pakilit',
+                'address' => 'Pakilit Residence Alvarico Tigbawan (Pob.) Lazi, Siquijor, Region VII, Philippines 6228',
+                'latitude_point' => 9.218691948,
+                'longitude_point' => 123.5189104,
+                'tel_no' => '0965-774-2490',
+                'e_mail_address' => 'psptechnology2019@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Electrical and Electronics',
+                'course_registered_program' => 'Electrical Installation and Maintenance NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '244 Hours',
+                'program_reg_no' => '20220761ELCEIM215069',
+                'date_issued' => '2023-12-28 00:00:00',
+                'expiration_date' => '2028-12-29 00:00:00',
+                'trainer' => 'Huberto V. Duran',
+                'nttc' => 'NTTC No.',
+                'expiration_date_of_nttc' => 'February 15, 2027',
+            ],
+            // Row 4
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'San Juan',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'Siquijor Language Academy Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Frelyn L. Pagente, CEO',
+                'address' => 'Maite, San Juan, Siquijor, Region VII (Central Visayas), 6227',
+                'latitude_point' => 9.151831975,
+                'longitude_point' => 123.5013812,
+                'tel_no' => '9279707007',
+                'e_mail_address' => 'frelynpagente@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'RTP',
+                'sector' => 'Others (Languages)',
+                'course_registered_program' => 'ESL Beginner Course',
+                'pgf_level' => 'N/A',
+                'duration' => '120 Hours',
+                'program_reg_no' => 'NTR No. 202207610024',
+                'date_issued' => '2022-11-22 00:00:00',
+                'expiration_date' => '2027-11-21 00:00:00',
+                'trainer' => "Jay Ann Amorsolo\nShiela Mae M. Caroro",
+                'nttc' => 'TMC No. 22076101022381',
+                'expiration_date_of_nttc' => 'Not indicated',
+            ],
+            // Row 5
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'CMC Institute of Business Management, Skills Training and Assessment Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Aida C. Madulara - President',
+                'address' => 'North Poblacion, Larena, Siquijor',
+                'latitude_point' => 9.278613093,
+                'longitude_point' => 123.584607,
+                'tel_no' => '9176710565',
+                'e_mail_address' => 'madulara@yahoo.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Tourism',
+                'course_registered_program' => 'Events Management Services NC III',
+                'pgf_level' => 'NC III',
+                'duration' => '188 Hours',
+                'program_reg_no' => 'WTR No. 20230761TRSEVM307006',
+                'date_issued' => '2024-03-15 00:00:00',
+                'expiration_date' => '2029-03-18 00:00:00',
+                'trainer' => "Ana Liza A. Baluran\nJovie D. Cabais",
+                'nttc' => "NTTC No. 211707121300387\nNTTC No. 191907121300496",
+                'expiration_date_of_nttc' => "19-Sep-26\n5/24/2024",
+            ],
+            // Row 6
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'CMC Institute of Business Management, Skills Training and Assessment Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Aida C. Madulara - President',
+                'address' => 'North Poblacion, Larena, Siquijor',
+                'latitude_point' => 9.278613093,
+                'longitude_point' => 123.584607,
+                'tel_no' => '9176710565',
+                'e_mail_address' => 'madulara@yahoo.com / cmcsiquijor.skillstraining@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Tourism',
+                'course_registered_program' => 'Food and Beverage Services NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '436 Hours',
+                'program_reg_no' => 'WTR No. 20230761TRSFBS213007',
+                'date_issued' => '2024-03-15 00:00:00',
+                'expiration_date' => '2029-03-18 00:00:00',
+                'trainer' => 'Almarie M. Sumalpong',
+                'nttc' => 'NTTC No. 211807611200303',
+                'expiration_date_of_nttc' => '06/06/2026',
+            ],
+            // Row 7
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'CMC Institute of Business Management, Skills Training and Assessment Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Aida C. Madulara - President',
+                'address' => 'North Poblacion, Larena, Siquijor',
+                'latitude_point' => 9.278613093,
+                'longitude_point' => 123.584607,
+                'tel_no' => '9176710565',
+                'e_mail_address' => 'madulara@yahoo.com / cmcsiquijor.skillstraining@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Social, Community Development and Other Services',
+                'course_registered_program' => 'Bookkeeping NC III',
+                'pgf_level' => 'NC III',
+                'duration' => '383 Hours',
+                'program_reg_no' => '20230761SOCBKP307032',
+                'date_issued' => '2023-04-13 00:00:00',
+                'expiration_date' => '2028-04-12 00:00:00',
+                'trainer' => "Melissa C. Handumon\nJesie B. Dua",
+                'nttc' => "NTTC No. 221807121300196\nNTTC No. 222207121300374",
+                'expiration_date_of_nttc' => "4/6/2027\n7/20/2027",
+            ],
+            // Row 8
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'CMC Institute of Business Management, Skills Training and Assessment Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Aida C. Madulara - President',
+                'address' => 'North Poblacion, Larena, Siquijor',
+                'latitude_point' => 9.278613093,
+                'longitude_point' => 123.584607,
+                'tel_no' => '9176710565',
+                'e_mail_address' => 'madulara@yahoo.com / cmcsiquijor.skillstraining@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Tourism',
+                'course_registered_program' => 'Tourism Promotion Services NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '76 Hours',
+                'program_reg_no' => '20230761TRSTPS215059',
+                'date_issued' => '2023-06-23 00:00:00',
+                'expiration_date' => '2028-06-26 00:00:00',
+                'trainer' => 'Gemma D. Adovo',
+                'nttc' => 'NTTC No. 222207121200400',
+                'expiration_date_of_nttc' => 'February 08, 2028',
+            ],
+            // Row 9
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'CMC Institute of Business Management, Skills Training and Assessment Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Aida C. Madulara - President',
+                'address' => 'North Poblacion, Larena, Siquijor',
+                'latitude_point' => 9.278613093,
+                'longitude_point' => 123.584607,
+                'tel_no' => '9176710565',
+                'e_mail_address' => 'madulara@yahoo.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Electrical and Electronics',
+                'course_registered_program' => 'Computer Systems Servicing NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '360 Hours',
+                'program_reg_no' => 'WTR No. 20240761ELCCSS213045',
+                'date_issued' => '2024-04-22 00:00:00',
+                'expiration_date' => '2024-04-23 00:00:00',
+                'trainer' => 'Rex V. Pinton',
+                'nttc' => 'NTTC No. 222107611200202',
+                'expiration_date_of_nttc' => '04/05/2027',
+            ],
+            // Row 10 (Newly Added from Image)
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Lazi',
+                'municipality_class' => '4th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'PSP Technological Institute Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Pierre S. Pakilit - President',
+                'address' => 'Pakilit Residence Alvarico Tigbawan (Pob.) Lazi, Siquijor, Region VII, Philippines 6228',
+                'latitude_point' => 9.135146101,
+                'longitude_point' => 123.6337518,
+                'tel_no' => '0965-774-2490',
+                'e_mail_address' => 'psptechnology2019@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Construction',
+                'course_registered_program' => 'Carpentry NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '301 Hours',
+                'program_reg_no' => 'WTR No. 20240761CONCAR218058',
+                'date_issued' => '2024-05-10 00:00:00',
+                'expiration_date' => '2029-05-13 00:00:00',
+                'trainer' => 'Edward P. Mariño',
+                'nttc' => 'NTTC No. 232207461200054',
+                'expiration_date_of_nttc' => '18/08/2027',
+            ],
+            // Row 11 (Previously Row 9 in your code)
+            [
+                'region' => 'VII',
+                'province' => 'Siquijor',
+                'congressional_district' => 'Lone',
+                'municipality' => 'Larena',
+                'municipality_class' => '5th',
+                'unique_institution_identification' => 'Not Found',
+                'name_of_institution' => 'SBR Technical Education Training Center Inc.',
+                'formerly_name_of_tvi' => null,
+                'name_of_institution_s_head' => 'Vic Ronald V. Patay, Branch Administrator',
+                'address' => 'Basac, Larena, Siquijor',
+                'latitude_point' => 9.219327971,
+                'longitude_point' => 123.6155831,
+                'tel_no' => '0965-145-2942',
+                'e_mail_address' => 'sbr.siquijor24@gmail.com',
+                'type_of_institution' => 'Private',
+                'classification_of_institution' => 'TVI',
+                'status' => 'WTR',
+                'sector' => 'Construction',
+                'course_registered_program' => 'Heavy Equipment Operation (Hydraulic Excavator) NC II',
+                'pgf_level' => 'NC II',
+                'duration' => '221 hours',
+                'program_reg_no' => 'WTR No. 20250761CONHEO219033',
+                'date_issued' => '2025-03-19 00:00:00',
+                'expiration_date' => '2030-03-20 00:00:00',
+                'trainer' => 'Ronie N. Razona',
+                'nttc' => 'NTTC No. 232007121200407',
+                'expiration_date_of_nttc' => 'July 18, 2028',
+            ],
+
+            
         ];
 
         foreach (array_chunk($rows, 50) as $chunk) {

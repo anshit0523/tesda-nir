@@ -15,7 +15,7 @@ return new class extends Migration
             $table->text('congressional_district')->nullable();
             $table->text('municipality')->nullable();
             $table->text('municipality_class')->nullable();
-            $table->text('unique_instittution_identification')->nullable();
+            $table->text('unique_institution_identification')->nullable();
             $table->text('name_of_institution')->nullable();
             $table->text('formerly_name_of_tvi')->nullable();
             $table->text('name_of_institution_s_head')->nullable();
