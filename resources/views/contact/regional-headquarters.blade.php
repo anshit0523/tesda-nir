@@ -89,14 +89,9 @@
                            border border-gray-200"
                 >
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!4v1786412431729!6m8!1m7!1sDQjaMdrr6Y2MqEZwbjaXZA!2m2!1d9.313317751916577!2d123.3014126596199!3f318.2828889597442!4f-0.35818975186133173!5f0.7820865974627469"
-                        class="w-full h-[380px] sm:h-[450px]"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin">
-                    </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1790126559731!6m8!1m7!1sWrzOWHlAMpDA1smIRBWyDg!2m2!1d9.31606885948656!2d123.296375474045!3f222.92499674325987!4f0.5157967037189906!5f1.4488494740772726" 
+                width="600" height="450" style="border:0;"
+                 allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 
                     <!-- Map Bottom Overlay -->
@@ -251,7 +246,8 @@
 
 
                             <a
-                                href="https://www.google.com/maps/@9.3133177,123.3014127,17z"
+                                href="https://www.google.com/maps/place/The+Lovely+Nest+Beauty+and+Wellness+Center/@9.3160689,123.2963755,23a,51.6y,222.92h,90.52t/data=!3m7!1e1!3m5!1sWrzOWHlAMpDA1smIRBWyDg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.5157967037189906%26panoid%3DWrzOWHlAMpDA1smIRBWyDg%26yaw%3D222.92499674325987!7i16384!8i8192!4m6!3m5!1s0x33ab6fbe71b8dd91
+                                :0x4b0f6db46da614d!8m2!3d9.3158764!4d123.2963648!16s%2Fg%2F11tf222h7n?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="mt-1
