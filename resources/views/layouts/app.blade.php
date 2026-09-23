@@ -13,9 +13,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'TESDA NIR')</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
 
 
-    <!-- Favicon -->
+    
  <!-- Favicon -->
 <link rel="icon" href="{{ asset('favicon.ico') }}">
 
