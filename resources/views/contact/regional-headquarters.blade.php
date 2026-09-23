@@ -257,7 +257,7 @@
                                        hover:text-blue-900
                                        transition"
                             >
-                                Dumaguete City,
+                                San Jose Street, Dumaguete City,
                                 Negros Oriental,
                                 Philippines
                             </a>
