@@ -188,26 +188,7 @@ resources/views/partials/chatbot.blade.php
     {{-- ========================================================
         FLOATING TRIGGER BUTTON (Matching Footer Gold/Navy Theme)
         ======================================================== --}}
-    <button
-        id="chatbotToggle"
-        type="button"
-        aria-label="Open TESDA NIR Assistant"
-        aria-expanded="false"
-        class="group relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-900 to-blue-950 text-amber-400 shadow-lg border border-amber-500/40 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400 hover:shadow-amber-500/20 focus:outline-none"
-    >
-        <span class="absolute inset-0 -z-10 rounded-2xl bg-blue-950/40 blur-lg transition group-hover:bg-blue-900/60"></span>
-
-        {{-- Open Icon --}}
-        <svg id="chatbotOpenIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6 transition duration-200">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h4.5m-8.25 5.25V6.75A2.25 2.25 0 0 1 6.75 4.5h10.5a2.25 2.25 0 0 1 2.25 2.25v11.25a2.25 2.25 0 0 1 2.25 2.25H6.75a2.25 2.25 0 0 1-2.25-2.25Z" />
-        </svg>
-
-     
-
-        {{-- Gold Dot Badge --}}
-        <span id="chatbotNotification" class="absolute -right-1 -top-1 flex h-3.5 w-3.5 items-center justify-center rounded-full border-2 border-slate-900 bg-amber-400 shadow-sm"></span>
-    </button>
-
+   
 </div>
 
 <script>
