@@ -50,8 +50,8 @@
             ============================ -->
 
             <ul 
-                class="hidden lg:flex items-center gap-8 
-                       text-white font-bold"
+               class="hidden lg:flex items-center gap-8 
+           text-white font-[Frutiger] font-bold"
             >
 
                 <!-- Home -->
