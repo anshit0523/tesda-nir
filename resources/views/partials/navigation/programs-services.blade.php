@@ -3,25 +3,31 @@
 
     <!-- Menu Button -->
     <button
-        class="flex items-center gap-2 py-2 transition duration-300 hover:text-amber-300">
+    type="button"
+    class="flex items-center gap-2 py-2 font-[Frutiger]
+           border-b-2
+           transition duration-300
+           {{ $programsActive
+                ? 'text-amber-300 border-amber-300'
+                : 'text-white border-transparent hover:text-amber-300 hover:border-amber-300'
+           }}"
+>
+    Programs & Services
 
-        Programs & Services
-
-        <svg
-            class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24">
-
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-
-        </svg>
-
-    </button>
+    <svg
+        class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+        />
+    </svg>
+</button>
 
     <!-- Hover Buffer -->
     <div class="absolute left-0 top-full w-full h-3"></div>
