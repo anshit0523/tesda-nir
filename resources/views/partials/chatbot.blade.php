@@ -202,10 +202,7 @@ resources/views/partials/chatbot.blade.php
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h4.5m-8.25 5.25V6.75A2.25 2.25 0 0 1 6.75 4.5h10.5a2.25 2.25 0 0 1 2.25 2.25v11.25a2.25 2.25 0 0 1 2.25 2.25H6.75a2.25 2.25 0 0 1-2.25-2.25Z" />
         </svg>
 
-        {{-- Close Icon --}}
-        <svg id="chatbotCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="hidden h-6 w-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>
+     
 
         {{-- Gold Dot Badge --}}
         <span id="chatbotNotification" class="absolute -right-1 -top-1 flex h-3.5 w-3.5 items-center justify-center rounded-full border-2 border-slate-900 bg-amber-400 shadow-sm"></span>
