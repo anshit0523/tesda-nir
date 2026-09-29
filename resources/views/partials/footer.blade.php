@@ -54,7 +54,7 @@
                 <!-- DATA PRIVACY -->
                 <a href="#" aria-label="Data Privacy Office" class="flex items-center justify-start lg:justify-end gap-4 lg:pl-8">
                     <img
-                        src="images/dps.png"
+                        src="images/dpo-dps.png"
                         alt="Data Privacy Office"
                         class="h-28 w-24 lg:w-auto shrink-0 object-contain"
                     >
