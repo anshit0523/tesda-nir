@@ -77,77 +77,13 @@
             <!-- GOOGLE MAP -->
             <!-- ================================= -->
 
-            <div>
-
-                <div
-                    class="group relative
-                           overflow-hidden
-                           rounded-2xl
-                           bg-white
-                           shadow-xl
-                           shadow-blue-900/10
-                           border border-gray-200"
-                >
-
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1790126559731!6m8!1m7!1sWrzOWHlAMpDA1smIRBWyDg!2m2!1d9.31606885948656!2d123.296375474045!3f222.92499674325987!4f0.5157967037189906!5f1.4488494740772726" 
-                width="600" height="450" style="border:0;"
-                 allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-
-                    <!-- Map Bottom Overlay -->
-                    <div
-                        class="absolute
-                               bottom-0
-                               left-0
-                               right-0
-                               p-5
-                               bg-gradient-to-t
-                               from-blue-950/80
-                               via-blue-950/30
-                               to-transparent
-                               pointer-events-none"
-                    >
-
-                        <div class="flex items-end justify-between gap-4">
-
-                            <div>
-
-                                <p
-                                    class="text-xs
-                                           font-bold
-                                           uppercase
-                                           tracking-widest
-                                           text-amber-300"
-                                >
-                                    TESDA NIR
-                                </p>
-
-                                <h3
-                                    class="mt-1
-                                           text-xl
-                                           font-bold
-                                           text-white"
-                                >
-                                    Regional Headquarters
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Map Note -->
-                <p class="mt-4 text-sm text-gray-500">
-                    Regional Headquarters — Dumaguete City, Negros Oriental.
-                </p>
-
-            </div>
-
-
+    <iframe
+    src="https://www.google.com/maps?q=9.3160689,123.2963755&z=17&output=embed"
+    class="w-full h-[450px] border-0"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
 
             <!-- ================================= -->
             <!-- OFFICE INFORMATION -->
