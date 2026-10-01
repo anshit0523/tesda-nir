@@ -22,3 +22,7 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+storage/app/google/service-account.json
+
+storage/app/csm/*.lock

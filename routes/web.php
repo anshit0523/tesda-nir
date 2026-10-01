@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CMS\CsmAdminController;
 use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\CsmController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,6 +13,7 @@ Route::view('/news', 'newsmain')->name('newsmain');
 Route::get('/regional-director', function () {
     return view('welcome');
 })->name('rd-message');
+
 
 
 # About us Section Routes
@@ -79,3 +82,16 @@ Route::view('/contact/siquijor', 'contact.siquijor'
 // API/Controller Routes
 
 Route::post('/chatbot', [ChatbotController::class, 'handle'])->name('chatbot.handle');
+
+
+Route::get('/customer', function () {
+return view('component.cms');
+})->name('customer');
+
+
+    Route::prefix('admin/csm')->name('admin.csm.')->group(function () {
+        Route::get('/', [CsmAdminController::class, 'index'])->name('index');
+        Route::get('/export', [CsmAdminController::class, 'export'])->name('export');
+        Route::get('/{id}', [CsmAdminController::class, 'show'])->whereNumber('id')->name('show');
+    });
+Route::post('/customer', [CsmController::class, 'store'])->name('csm.store');
